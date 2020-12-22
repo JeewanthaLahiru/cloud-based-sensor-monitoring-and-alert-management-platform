@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { UserRegisterModel } from '../UserRegisterModel';
+import { AuthService } from '../auth.service';
 
 @Component({
   selector: 'app-register',
@@ -12,13 +13,17 @@ export class RegisterComponent implements OnInit {
 
   checkBoxStatus:boolean = false;
 
-  constructor() { }
+  constructor(private auth:AuthService) { }
 
   ngOnInit(): void {
   }
 
   registerUser(){
     console.log(this.user1);
+    this.auth.registerUser(this.user1).subscribe(
+      res=>console.log(res),
+      err=>console.log(err)
+    )
   }
 
 }
