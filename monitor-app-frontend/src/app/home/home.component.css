@@ -35,3 +35,7 @@
     font-weight: 700;
     text-decoration: none;
 }
+.btnD1:hover{
+    cursor: pointer;
+    background: rgb(42, 158, 71);
+}
