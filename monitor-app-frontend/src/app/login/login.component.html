@@ -5,7 +5,7 @@
         </div>
         <div class="card-body">
             <div class="container">
-                <form class="form">
+                <form #loginForm='ngForm' method="POST" class="form">
                     <div class="form-group">
                         <label>Email</label>
                         <input type="text" #email='ngModel' required [(ngModel)]='user1.email' [class.is-invalid]='email.invalid && email.touched' name='email' class="form-control is-invalid" placeholder="Email...">
@@ -14,7 +14,7 @@
                         <label>Password</label>
                         <input type="text" #password='ngModel' required [(ngModel)]='user1.password' [class.is-invalid]='password.invalid && password.touched' name='password' class="form-control is-invalid" placeholder="Password...">
                     </div><br>
-                    <button class="btn btn-success" (click)="loginUser()">Log in</button>
+                    <button class="btn btn-success" (click)="loginUser()" [disabled]='loginForm.invalid'>Log in</button>
                 </form>
             </div>
         </div>
