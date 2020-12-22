@@ -10,6 +10,8 @@ export class RegisterComponent implements OnInit {
 
   user1 = new UserRegisterModel('','','','','');
 
+  checkBoxStatus:boolean = false;
+
   constructor() { }
 
   ngOnInit(): void {
