@@ -1,10 +1,10 @@
 .banner{
     position: relative;
-    background-color: white;
+    background:url('../../assets/images/banner/banner001.jpg');
     min-height: 70vh;
     background-size: cover;
     background-position: center;
-    padding: 200px 0 200px;
+    padding: 150px 0 200px;
 }
 .banner h2{
     margin: 0;
