@@ -4,6 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { AuthService } from './auth.service';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { TokenInterceptorService } from './token-interceptor.service';
+import { WeatherService } from './weather.service';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -32,6 +33,7 @@ import { AuthGuard } from './auth.guard';
   providers: [
     AuthService,
     AuthGuard,
+    WeatherService,
     {
       provide:HTTP_INTERCEPTORS,
       useClass:TokenInterceptorService,
