@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import jwt_decode from 'jwt-decode';
+import { IWeather } from '../models/iweather';
+import { WeatherService } from '../weather.service';
 
 @Component({
   selector: 'app-profile',
@@ -8,11 +10,16 @@ import jwt_decode from 'jwt-decode';
 })
 export class ProfileComponent implements OnInit {
 
+  weather:IWeather[]
+
   _token = localStorage.getItem('token')
 
-  constructor() { }
+  constructor(private _weather:WeatherService) { }
 
   ngOnInit(): void {
+    this._weather.getWeather().subscribe(data=>{
+      this.weather = data
+    })
   }
 
   getDecodedAccessToken(token: string): any {
