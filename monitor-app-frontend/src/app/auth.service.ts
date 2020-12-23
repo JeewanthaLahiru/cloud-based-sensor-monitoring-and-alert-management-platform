@@ -8,8 +8,9 @@ import { UserLoginModel } from './UserLoginModel';
 })
 export class AuthService {
 
-  private _registerUrl = "http://localhost:3000/api/register";
-  private _loginUrl = "http://localhost:3000/api/login";
+
+  private _registerUrl = "http://localhost:8080/User";
+  private _loginUrl = "http://localhost:8080/User?";
 
   constructor(private _http:HttpClient) { }
 
