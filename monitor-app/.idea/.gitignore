@@ -2,7 +2,7 @@
 /shelf/
 /workspace.xml
 # Datasource local storage ignored files
-/../../../:\cloud-based-sensor-monitoring-and-alert-management-platform\.idea/dataSources/
+/../../../../:\cloud-based-sensor-monitoring-and-alert-management-platform\monitor-app\.idea/dataSources/
 /dataSources.local.xml
 # Editor-based HTTP Client requests
 /httpRequests/
