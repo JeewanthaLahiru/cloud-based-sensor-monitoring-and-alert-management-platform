@@ -6,5 +6,12 @@ import { HttpClient } from '@angular/common/http';
 })
 export class WeatherService {
 
+  _url="http://localhost:3000/api/sensordata";
+
   constructor(private _http:HttpClient) { }
+
+  getWeather(){
+    return this._http.get<any>(this._url);
+  }
+
 }
