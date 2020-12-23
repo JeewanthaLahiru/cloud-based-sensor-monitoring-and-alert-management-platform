@@ -1,3 +1,16 @@
-<p>profile works!</p>
-<p>{{weather|json}}</p>
-<h1>hello</h1>
+<table class="table w-50 mx-auto">
+    <thead>
+        <tr>
+            <th>Sensor</th>
+            <th>Date</th>
+            <th>Value</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor='let item of weather'>
+            <td>{{item.sensor_id}}</td>
+            <td>{{item.date}}</td>
+            <td>{{item.data_value}}</td>
+        </tr>
+    </tbody>
+</table>
