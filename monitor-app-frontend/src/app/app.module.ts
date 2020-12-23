@@ -11,6 +11,7 @@ import { RegisterComponent } from './register/register.component';
 import { ProfileComponent } from './profile/profile.component';
 import { HomeComponent } from './home/home.component';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { AuthGuard } from './auth.guard';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { NotFoundComponent } from './not-found/not-found.component';
     HttpClientModule
   ],
   providers: [
-    AuthService
+    AuthService,
+    AuthGuard
   ],
   bootstrap: [AppComponent]
 })
