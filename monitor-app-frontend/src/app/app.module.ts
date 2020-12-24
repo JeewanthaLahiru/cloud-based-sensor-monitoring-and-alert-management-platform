@@ -15,6 +15,8 @@ import { HomeComponent } from './home/home.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { AuthGuard } from './auth.guard';
 import { TemperatureComponent } from './temperature/temperature.component';
+import { HumidityComponent } from './humidity/humidity.component';
+import { PressureComponent } from './pressure/pressure.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,9 @@ import { TemperatureComponent } from './temperature/temperature.component';
     ProfileComponent,
     HomeComponent,
     NotFoundComponent,
-    TemperatureComponent
+    TemperatureComponent,
+    HumidityComponent,
+    PressureComponent
   ],
   imports: [
     BrowserModule,
