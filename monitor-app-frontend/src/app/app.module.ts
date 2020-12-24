@@ -14,6 +14,7 @@ import { ProfileComponent } from './profile/profile.component';
 import { HomeComponent } from './home/home.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { AuthGuard } from './auth.guard';
+import { TemperatureComponent } from './temperature/temperature.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { AuthGuard } from './auth.guard';
     RegisterComponent,
     ProfileComponent,
     HomeComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    TemperatureComponent
   ],
   imports: [
     BrowserModule,
