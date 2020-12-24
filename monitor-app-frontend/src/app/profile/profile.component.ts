@@ -12,7 +12,8 @@ import { Chart } from 'node_modules/chart.js';
 export class ProfileComponent implements OnInit {
 
   weather: IWeather[];
-  
+  datelist = []
+  dataValue = []
 
   _token = localStorage.getItem('token')
 
@@ -21,7 +22,19 @@ export class ProfileComponent implements OnInit {
   ngOnInit(): void {
     this._weather.getWeather().subscribe(data => {
       this.weather = data
+      let array1 = []
+      let array2 = []
+      let i = 0
+      data.forEach(function(item){
+        array1[i] = item.date
+        array2[i] = Number(item.data_value.slice(0,2))
+        i++
+      })
+      console.log(array2)
+      this.datelist = array1
+      this.dataValue = array2
     })
+    
 
   }
 
