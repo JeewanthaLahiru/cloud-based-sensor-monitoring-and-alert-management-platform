@@ -3,6 +3,7 @@ import jwt_decode from 'jwt-decode';
 import { IWeather } from '../models/iweather';
 import { WeatherService } from '../weather.service';
 import { Chart } from 'node_modules/chart.js';
+import { Router } from "@angular/router";
 
 @Component({
   selector: 'app-profile',
@@ -20,7 +21,7 @@ export class ProfileComponent implements OnInit {
 
   _token = localStorage.getItem('token')
 
-  constructor(private _weather: WeatherService) { }
+  constructor(private _weather: WeatherService,private _route:Router) { }
 
   ngOnInit(): void {
     this.testingKey = ['hello','world']
@@ -81,6 +82,12 @@ export class ProfileComponent implements OnInit {
     arr2.forEach(function(item){
       arrempty.push(item)
     })
+  }
+
+
+  logOut(){
+    localStorage.removeItem('token');
+    this._route.navigate(['/login'])
   }
 
 }
