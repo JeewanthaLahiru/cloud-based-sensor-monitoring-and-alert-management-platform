@@ -40,6 +40,10 @@ export class TemperatureComponent implements OnInit {
                 yAxes: [{
                     ticks: {
                         beginAtZero: false
+                    },
+                    scaleLabel:{
+                      display:true,
+                      labelString:'Temperature(\'C)'
                     }
                 }]
             }
