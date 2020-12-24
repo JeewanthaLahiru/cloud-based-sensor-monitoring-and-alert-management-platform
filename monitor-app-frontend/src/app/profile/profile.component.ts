@@ -25,16 +25,35 @@ export class ProfileComponent implements OnInit {
       let array1 = []
       let array2 = []
       let i = 0
-      data.forEach(function(item){
+      data.forEach(function (item) {
         array1[i] = item.date
-        array2[i] = Number(item.data_value.slice(0,2))
+        array2[i] = Number(item.data_value.slice(0, 2))
         i++
       })
       console.log(array2)
       this.datelist = array1
       this.dataValue = array2
     })
-    
+
+    var chart = new Chart('myChart', {
+      // The type of chart we want to create
+      type: 'line',
+
+      // The data for our dataset
+      data: {
+        labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+        datasets: [{
+          label: 'My First dataset',
+          backgroundColor: 'rgb(255, 99, 132)',
+          borderColor: 'rgb(255, 99, 132)',
+          data: [0, 10, 5, 2, 20, 30, 45]
+        }]
+      },
+
+      // Configuration options go here
+      options: {}
+    });
+
 
   }
 
