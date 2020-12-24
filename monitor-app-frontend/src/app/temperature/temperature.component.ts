@@ -20,8 +20,8 @@ export class TemperatureComponent implements OnInit {
       let weatherDate = []
       let weatherValue = []
       this.weather.forEach(function(item){
-        weatherDate.push(Number(item.date.slice(-8,-3)))
-        weatherValue.push(item.data_value.slice(0,2))
+        weatherDate.push(item.date.slice(-8,-3))
+        weatherValue.push(Number(item.data_value.slice(0,2)))
       })
 
       var myChart = new Chart('myChart', {
@@ -29,9 +29,9 @@ export class TemperatureComponent implements OnInit {
         data: {
             labels: weatherDate,
             datasets: [{
-                label: 'weather',
+                label: 'Temperature',
                 data: weatherValue,
-                backgroundColor: 'rgba(255, 99, 132, 0.2)',
+                backgroundColor: 'rgba(0, 146, 244, 0.2)',
                 borderWidth: 1
             }]
         },
