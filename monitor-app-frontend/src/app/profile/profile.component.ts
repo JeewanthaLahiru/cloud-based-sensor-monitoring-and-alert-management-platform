@@ -32,7 +32,7 @@ export class ProfileComponent implements OnInit {
       let array2 = []
       let i = 0
       data.forEach(function (item) {
-        array1[i] = item.date
+        array1[i] = item.date.slice(-8,-3)
         array2[i] = Number(item.data_value.slice(0, 2))
         i++
       })
@@ -44,7 +44,7 @@ export class ProfileComponent implements OnInit {
         data: {
             labels: this.datelist,
             datasets: [{
-                label: '# of Votes',
+                label: 'weather',
                 data: this.dataValue,
                 backgroundColor: 'rgba(255, 99, 132, 0.2)',
                 borderWidth: 1
