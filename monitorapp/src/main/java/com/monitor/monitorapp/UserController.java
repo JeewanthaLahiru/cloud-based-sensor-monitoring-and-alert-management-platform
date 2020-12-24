@@ -29,7 +29,6 @@ public class UserController {
     public User getUser(@RequestParam String email) {
         System.out.println("Getting the user. userId: " + email);
 
-
         return UserRepository.getUser(email);
 
     }
