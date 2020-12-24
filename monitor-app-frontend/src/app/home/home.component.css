@@ -39,3 +39,16 @@
     cursor: pointer;
     background: rgb(42, 158, 71);
 }
+
+
+.container-fluid img{
+    width: 100%;
+}
+.container-fluid{
+    width: 50%;
+}
+@media only screen and (max-width: 992px){
+    .container-fluid{
+        width: 100%;
+    }
+}
