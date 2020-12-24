@@ -12,14 +12,20 @@ import { Chart } from 'node_modules/chart.js';
 export class ProfileComponent implements OnInit {
 
   weather: IWeather[];
-  datelist = []
-  dataValue = []
+  public datelist: String[]
+  dataValue: String[]
+  chart : []
+  testingValue = 35
+  testingKey:String[]
 
   _token = localStorage.getItem('token')
 
   constructor(private _weather: WeatherService) { }
 
   ngOnInit(): void {
+    this.testingKey = ['hello','world']
+    console.log(this.testingKey)
+    
     this._weather.getWeather().subscribe(data => {
       this.weather = data
       let array1 = []
@@ -30,30 +36,35 @@ export class ProfileComponent implements OnInit {
         array2[i] = Number(item.data_value.slice(0, 2))
         i++
       })
-      console.log(array2)
       this.datelist = array1
       this.dataValue = array2
+      //console.log(this.datelist)
+      var myChart = new Chart('myChart', {
+        type: 'line',
+        data: {
+            labels: this.datelist,
+            datasets: [{
+                label: '# of Votes',
+                data: this.dataValue,
+                backgroundColor: 'rgba(255, 99, 132, 0.2)',
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                yAxes: [{
+                    ticks: {
+                        beginAtZero: true
+                    }
+                }]
+            }
+        }
+    });
     })
 
-    var chart = new Chart('myChart', {
-      // The type of chart we want to create
-      type: 'line',
+    console.log(this.datelist)
 
-      // The data for our dataset
-      data: {
-        labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
-        datasets: [{
-          label: 'My First dataset',
-          backgroundColor: 'rgb(255, 99, 132)',
-          borderColor: 'rgb(255, 99, 132)',
-          data: [0, 10, 5, 2, 20, 30, 45]
-        }]
-      },
-
-      // Configuration options go here
-      options: {}
-    });
-
+    
 
   }
 
@@ -64,6 +75,12 @@ export class ProfileComponent implements OnInit {
     catch (Error) {
       return null;
     }
+  }
+
+  copyArray(arrempty:String[],arr2:String[]){
+    arr2.forEach(function(item){
+      arrempty.push(item)
+    })
   }
 
 }
