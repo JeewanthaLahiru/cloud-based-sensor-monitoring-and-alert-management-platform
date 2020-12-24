@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import jwt_decode from 'jwt-decode';
 import { IWeather } from '../models/iweather';
 import { WeatherService } from '../weather.service';
-import { Chart } from 'node_modules/chart.js';
 import { Router } from "@angular/router";
 
 @Component({
@@ -28,44 +27,8 @@ export class ProfileComponent implements OnInit {
     console.log(this.testingKey)
     
     this._weather.getWeather().subscribe(data => {
-      this.weather = data
-      let array1 = []
-      let array2 = []
-      let i = 0
-      data.forEach(function (item) {
-        array1[i] = item.date.slice(-8,-3)
-        array2[i] = Number(item.data_value.slice(0, 2))
-        i++
-      })
-      this.datelist = array1
-      this.dataValue = array2
-      //console.log(this.datelist)
-      var myChart = new Chart('myChart', {
-        type: 'line',
-        data: {
-            labels: this.datelist,
-            datasets: [{
-                label: 'weather',
-                data: this.dataValue,
-                backgroundColor: 'rgba(255, 99, 132, 0.2)',
-                borderWidth: 1
-            }]
-        },
-        options: {
-            scales: {
-                yAxes: [{
-                    ticks: {
-                        beginAtZero: false
-                    }
-                }]
-            }
-        }
-    });
+      this.weather = data      
     })
-
-    console.log(this.datelist)
-
-    
 
   }
 
