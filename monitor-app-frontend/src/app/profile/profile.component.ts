@@ -54,7 +54,7 @@ export class ProfileComponent implements OnInit {
             scales: {
                 yAxes: [{
                     ticks: {
-                        beginAtZero: true
+                        beginAtZero: false
                     }
                 }]
             }
