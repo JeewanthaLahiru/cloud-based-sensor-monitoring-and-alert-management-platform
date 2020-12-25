@@ -8,14 +8,14 @@ import java.util.Arrays;
 import java.util.List;
 
 @Component
-public class DbSeeder /*implements CommandLineRunner*/ {
+public class DbSeeder /*implements CommandLineRunner */{
     private UserRepository userRepository;
 
     public DbSeeder(UserRepository userRepository) {
         this.userRepository = userRepository;
     }
-
-    /*@Override
+/*
+    @Override
     public void run(String... strings) throws Exception {
         User Chanaka = new User(
                 "Chanaka",

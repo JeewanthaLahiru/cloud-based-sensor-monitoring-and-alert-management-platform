@@ -11,7 +11,7 @@ import java.util.List;
 public class UserController {
 
     private UserRepository userRepository;
-
+    @Autowired
     public UserController(UserRepository userRepository) {
         this.userRepository = userRepository;
     }
