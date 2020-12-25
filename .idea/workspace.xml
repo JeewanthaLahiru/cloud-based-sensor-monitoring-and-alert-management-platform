@@ -4,11 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="46f66402-4104-4689-ae50-181e077b6d89" name="Default Changelist" comment="added notification model class">
-      <change afterPath="$PROJECT_DIR$/monitorapp/src/main/java/com/monitor/database/repository/NotificationRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/monitorapp/src/main/java/com/monitor/database/service/NotificationService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/monitorapp/src/main/java/com/monitor/database/web/controller/NotificationController.java" afterDir="false" />
+    <list default="true" id="46f66402-4104-4689-ae50-181e077b6d89" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_projectreactor_reactor_core_3_4_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_projectreactor_reactor_test_3_4_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_reactivestreams_reactive_streams_1_0_3.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/monitorapp/src/main/java/com/monitor/database/service/NotificationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/monitorapp/src/main/java/com/monitor/database/service/NotificationService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -121,7 +122,7 @@
       <updated>1608750951321</updated>
       <workItem from="1608750952693" duration="1650000" />
       <workItem from="1608817769679" duration="5988000" />
-      <workItem from="1608886437674" duration="5362000" />
+      <workItem from="1608886437674" duration="5963000" />
     </task>
     <task id="LOCAL-00001" summary="implementing nifi data posting listener stage:0">
       <created>1608821091610</created>
@@ -144,7 +145,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608903650827</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="added Flux dependency and implemented NotificationRepository">
+      <created>1608904649206</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1608904649206</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -154,72 +162,73 @@
     <MESSAGE value="implementing nifi data posting listener stage:0" />
     <MESSAGE value="added database configurations" />
     <MESSAGE value="added notification model class" />
-    <option name="LAST_COMMIT_MESSAGE" value="added notification model class" />
+    <MESSAGE value="added Flux dependency and implemented NotificationRepository" />
+    <option name="LAST_COMMIT_MESSAGE" value="added Flux dependency and implemented NotificationRepository" />
   </component>
   <component name="WindowStateProjectService">
     <state x="249" y="7" key="#Project_Structure" timestamp="1608817969431">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="249" y="7" key="#Project_Structure/0.0.1536.864@0.0.1536.864" timestamp="1608817969431" />
-    <state x="574" y="139" key="#com.intellij.ide.util.MemberChooser" timestamp="1608904301389">
+    <state x="574" y="139" key="#com.intellij.ide.util.MemberChooser" timestamp="1608904746135">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="574" y="139" key="#com.intellij.ide.util.MemberChooser/0.0.1536.864@0.0.1536.864" timestamp="1608904301389" />
-    <state x="73" y="1" key="CommitChangelistDialog2" timestamp="1608904147147">
+    <state x="574" y="139" key="#com.intellij.ide.util.MemberChooser/0.0.1536.864@0.0.1536.864" timestamp="1608904746135" />
+    <state x="78" y="2" key="CommitChangelistDialog2" timestamp="1608904646263">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="73" y="1" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1608904147147" />
+    <state x="78" y="2" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1608904646263" />
     <state x="549" y="187" key="FileChooserDialogImpl" timestamp="1608887114192">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="549" y="187" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1608887114192" />
-    <state width="1493" height="223" key="GridCell.Tab.0.bottom" timestamp="1608886477823">
+    <state width="1493" height="223" key="GridCell.Tab.0.bottom" timestamp="1608904489903">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state width="1493" height="213" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1608752585014" />
-    <state width="1493" height="223" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1608886477823" />
-    <state width="1493" height="223" key="GridCell.Tab.0.center" timestamp="1608886477823">
+    <state width="1493" height="223" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1608904489903" />
+    <state width="1493" height="223" key="GridCell.Tab.0.center" timestamp="1608904489902">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state width="1493" height="213" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1608752585014" />
-    <state width="1493" height="223" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1608886477823" />
-    <state width="1493" height="223" key="GridCell.Tab.0.left" timestamp="1608886477822">
+    <state width="1493" height="223" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1608904489902" />
+    <state width="1493" height="223" key="GridCell.Tab.0.left" timestamp="1608904489902">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state width="1493" height="213" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1608752585014" />
-    <state width="1493" height="223" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1608886477822" />
-    <state width="1493" height="223" key="GridCell.Tab.0.right" timestamp="1608886477823">
+    <state width="1493" height="223" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1608904489902" />
+    <state width="1493" height="223" key="GridCell.Tab.0.right" timestamp="1608904489902">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state width="1493" height="213" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1608752585014" />
-    <state width="1493" height="223" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1608886477823" />
-    <state width="1493" height="223" key="GridCell.Tab.1.bottom" timestamp="1608886477823">
+    <state width="1493" height="223" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1608904489902" />
+    <state width="1493" height="223" key="GridCell.Tab.1.bottom" timestamp="1608904489903">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state width="1493" height="213" key="GridCell.Tab.1.bottom/0.0.1536.834@0.0.1536.834" timestamp="1608752585014" />
-    <state width="1493" height="223" key="GridCell.Tab.1.bottom/0.0.1536.864@0.0.1536.864" timestamp="1608886477823" />
-    <state width="1493" height="223" key="GridCell.Tab.1.center" timestamp="1608886477823">
+    <state width="1493" height="223" key="GridCell.Tab.1.bottom/0.0.1536.864@0.0.1536.864" timestamp="1608904489903" />
+    <state width="1493" height="223" key="GridCell.Tab.1.center" timestamp="1608904489903">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state width="1493" height="213" key="GridCell.Tab.1.center/0.0.1536.834@0.0.1536.834" timestamp="1608752585014" />
-    <state width="1493" height="223" key="GridCell.Tab.1.center/0.0.1536.864@0.0.1536.864" timestamp="1608886477823" />
-    <state width="1493" height="223" key="GridCell.Tab.1.left" timestamp="1608886477823">
+    <state width="1493" height="223" key="GridCell.Tab.1.center/0.0.1536.864@0.0.1536.864" timestamp="1608904489903" />
+    <state width="1493" height="223" key="GridCell.Tab.1.left" timestamp="1608904489903">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state width="1493" height="213" key="GridCell.Tab.1.left/0.0.1536.834@0.0.1536.834" timestamp="1608752585014" />
-    <state width="1493" height="223" key="GridCell.Tab.1.left/0.0.1536.864@0.0.1536.864" timestamp="1608886477823" />
-    <state width="1493" height="223" key="GridCell.Tab.1.right" timestamp="1608886477823">
+    <state width="1493" height="223" key="GridCell.Tab.1.left/0.0.1536.864@0.0.1536.864" timestamp="1608904489903" />
+    <state width="1493" height="223" key="GridCell.Tab.1.right" timestamp="1608904489903">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state width="1493" height="213" key="GridCell.Tab.1.right/0.0.1536.834@0.0.1536.834" timestamp="1608752585014" />
-    <state width="1493" height="223" key="GridCell.Tab.1.right/0.0.1536.864@0.0.1536.864" timestamp="1608886477823" />
+    <state width="1493" height="223" key="GridCell.Tab.1.right/0.0.1536.864@0.0.1536.864" timestamp="1608904489903" />
     <state x="299" y="87" key="Maven.ArtifactSearchDialog" timestamp="1608904431053">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="299" y="87" key="Maven.ArtifactSearchDialog/0.0.1536.864@0.0.1536.864" timestamp="1608904431053" />
-    <state x="361" y="152" key="Vcs.Push.Dialog.v2" timestamp="1608903654216">
+    <state x="361" y="152" key="Vcs.Push.Dialog.v2" timestamp="1608904651401">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="361" y="152" key="Vcs.Push.Dialog.v2/0.0.1536.864@0.0.1536.864" timestamp="1608903654216" />
+    <state x="361" y="152" key="Vcs.Push.Dialog.v2/0.0.1536.864@0.0.1536.864" timestamp="1608904651401" />
   </component>
 </project>
