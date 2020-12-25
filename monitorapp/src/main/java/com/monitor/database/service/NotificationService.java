@@ -24,7 +24,7 @@ public class NotificationService {
 
     @PostConstruct
     public void configure() {
-        reactiveMongoTemplate.collectionExists("collection").subscribe();
+        reactiveMongoTemplate.collectionExists("notifications").subscribe();
     }
 
     public Mono<Notification> save(Notification notification) {
