@@ -13,4 +13,5 @@ public class MongoListener extends AbstractMongoEventListener<Integer>
 
         System.out.println("Done");
     }
+
 }
