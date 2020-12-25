@@ -9,16 +9,16 @@ import { UserLoginModel } from './UserLoginModel';
 export class AuthService {
 
 
-  private _registerUrl = "http://localhost:8080/User";
-  private _loginUrl = "http://localhost:8080/User?";
+  private _registerUrl = "http://localhost:8080/User/add";
+  private _loginUrl = "http://localhost:8080/info";
 
   constructor(private _http:HttpClient) { }
 
-  registerUser(user:UserRegisterModel){
+  registerUser(user: UserRegisterModel){
     return this._http.post<any>(this._registerUrl,user);
   }
 
-  loginUser(user:UserLoginModel){
+  loginUser(user: UserLoginModel){
     return this._http.post<any>(this._loginUrl,user);
   }
 
