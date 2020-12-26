@@ -4,11 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="46f66402-4104-4689-ae50-181e077b6d89" name="Default Changelist" comment="">
+    <list default="true" id="60958156-79eb-4e39-8626-dff2bf03fc58" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/monitorapp/src/main/java/com/monitor/monitorapp/DbSeeder.java" beforeDir="false" afterPath="$PROJECT_DIR$/monitorapp/src/main/java/com/monitor/monitorapp/DbSeeder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/monitorapp/src/main/java/com/monitor/monitorapp/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/monitorapp/src/main/java/com/monitor/monitorapp/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/monitorapp/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/monitorapp/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/monitor-app/monitor-app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/monitor-app/monitor-app.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,19 +64,6 @@
     </key>
   </component>
   <component name="RunManager" selected="Spring Boot.MonitorappApplication">
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="E2E Tests (monitor-app-frontend)" type="JavaScriptTestRunnerProtractor">
       <config-file value="$PROJECT_DIR$/monitor-app-frontend/e2e/protractor.conf.js" />
       <node-interpreter value="project" />
