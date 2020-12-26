@@ -63,13 +63,15 @@
     </key>
   </component>
   <component name="RunManager" selected="Spring Boot.MonitorappApplication">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -88,7 +90,7 @@
     </configuration>
     <configuration name="MonitorappApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="monitorapp" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.monitor.monitorapp.MonitorappApplication" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.monitor.MonitorappApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
