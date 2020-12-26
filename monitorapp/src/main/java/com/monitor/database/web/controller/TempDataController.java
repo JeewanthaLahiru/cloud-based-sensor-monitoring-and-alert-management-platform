@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 
 @RestController
-@RequestMapping("/data")
+@RequestMapping("/tempdata")
 public class TempDataController {
 
     private TempDataRepository tempDataRepository;
