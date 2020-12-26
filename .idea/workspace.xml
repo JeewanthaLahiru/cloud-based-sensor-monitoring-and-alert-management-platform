@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="46f66402-4104-4689-ae50-181e077b6d89" name="Default Changelist" comment="" />
+    <list default="true" id="46f66402-4104-4689-ae50-181e077b6d89" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/monitorapp/src/main/java/com/monitor/monitorapp/DbSeeder.java" beforeDir="false" afterPath="$PROJECT_DIR$/monitorapp/src/main/java/com/monitor/monitorapp/DbSeeder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/monitorapp/src/main/java/com/monitor/monitorapp/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/monitorapp/src/main/java/com/monitor/monitorapp/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/monitorapp/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/monitorapp/src/main/resources/application.properties" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -19,13 +24,6 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="MavenImportPreferences">
-    <option name="generalSettings">
-      <MavenGeneralSettings>
-        <option name="mavenHome" value="C:\Program Files\JetBrains\IntelliJ IDEA 2019.3.1\plugins\maven\lib\maven3" />
-      </MavenGeneralSettings>
-    </option>
   </component>
   <component name="ProjectId" id="1m4RbXZtu4UQCKXkfHQch0l7ygi" />
   <component name="ProjectViewState">
@@ -42,7 +40,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="dart.analysis.tool.window.visible" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/monitorapp/src/main/java/com/monitor/monitorapp" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -52,21 +50,14 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Problems" />
     <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="show.migrate.to.gradle.popup" value="false" />
-    <property name="ts.external.directory.path" value="D:\intelliJ JAVA WorkSpace\mongo monitor\cloud-based-sensor-monitoring-and-alert-management-platform\monitor-app-frontend\node_modules\typescript\lib" />
-  </component>
-  <component name="ReactorSettings">
-    <option name="notificationShown" value="true" />
+    <property name="ts.external.directory.path" value="E:\cloud-based-sensor-monitoring-and-alert-management-platform\monitor-app-frontend\node_modules\typescript\lib" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="com.monitor.monitorapp" />
-      <recent name="com.monitor" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\cloud-based-sensor-monitoring-and-alert-management-platform\monitorapp\src\main\java\com\monitor\monitorapp" />
     </key>
@@ -99,7 +90,7 @@
     </configuration>
     <configuration name="MonitorappApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="monitorapp" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.monitor.monitorapp.MonitorappApplication" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.monitor.MonitorappApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -123,224 +114,36 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1608750951321</updated>
-      <workItem from="1608750952693" duration="1650000" />
-      <workItem from="1608817769679" duration="5988000" />
-      <workItem from="1608886437674" duration="7604000" />
-      <workItem from="1608906736269" duration="10203000" />
-      <workItem from="1608966755670" duration="310000" />
-      <workItem from="1608967101119" duration="2995000" />
-      <workItem from="1608977756304" duration="2375000" />
+      <workItem from="1608750952693" duration="2199000" />
+      <workItem from="1608815412363" duration="2499000" />
+      <workItem from="1608822843090" duration="5214000" />
+      <workItem from="1608829460955" duration="5078000" />
+      <workItem from="1608872922917" duration="1917000" />
+      <workItem from="1608890961447" duration="11734000" />
     </task>
-    <task id="LOCAL-00001" summary="implementing nifi data posting listener stage:0">
-      <created>1608821091610</created>
+    <task id="LOCAL-00001" summary="user register">
+      <created>1608752726614</created>
       <option name="number" value="00001" />
       <option name="presentableId" value="LOCAL-00001" />
       <option name="project" value="LOCAL" />
-      <updated>1608821091610</updated>
+      <updated>1608752726614</updated>
     </task>
-    <task id="LOCAL-00002" summary="added database configurations">
-      <created>1608886800190</created>
+    <task id="LOCAL-00002" summary="user register and user delete complete">
+      <created>1608901446933</created>
       <option name="number" value="00002" />
       <option name="presentableId" value="LOCAL-00002" />
       <option name="project" value="LOCAL" />
-      <updated>1608886800190</updated>
+      <updated>1608901446933</updated>
     </task>
-    <task id="LOCAL-00003" summary="added notification model class">
-      <created>1608903650827</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1608903650827</updated>
-    </task>
-    <task id="LOCAL-00004" summary="added Flux dependency and implemented NotificationRepository">
-      <created>1608904649206</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1608904649206</updated>
-    </task>
-    <task id="LOCAL-00005" summary="implemented NotificationService using reactive mongo">
-      <created>1608905270473</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1608905270473</updated>
-    </task>
-    <task id="LOCAL-00006" summary="added tempdata model">
-      <created>1608915227863</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1608915227863</updated>
-    </task>
-    <task id="LOCAL-00007" summary="implemented TempDataRepository interface">
-      <created>1608916411551</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1608916411551</updated>
-    </task>
-    <task id="LOCAL-00008" summary="implemented TempDataController">
-      <created>1608917557980</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1608917557980</updated>
-    </task>
-    <task id="LOCAL-00009" summary="disabled service implementation for ReactiveCrudRepository and added EnableMongoRepositories annotation for main class">
-      <created>1608980009129</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1608980009129</updated>
-    </task>
-    <task id="LOCAL-00010" summary="added notification service implementation stage:1:- added NotificationReactiveRepository">
-      <created>1608980516309</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1608980516309</updated>
-    </task>
-    <option name="localTasksCounter" value="11" />
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="implementing nifi data posting listener stage:0" />
-    <MESSAGE value="added database configurations" />
-    <MESSAGE value="added notification model class" />
-    <MESSAGE value="added Flux dependency and implemented NotificationRepository" />
-    <MESSAGE value="implemented NotificationService using reactive mongo" />
-    <MESSAGE value="added tempdata model" />
-    <MESSAGE value="implemented TempDataRepository interface" />
-    <MESSAGE value="implemented TempDataController" />
-    <MESSAGE value="disabled service implementation for ReactiveCrudRepository and added EnableMongoRepositories annotation for main class" />
-    <MESSAGE value="added notification service implementation stage:1:- added NotificationReactiveRepository" />
-    <option name="LAST_COMMIT_MESSAGE" value="added notification service implementation stage:1:- added NotificationReactiveRepository" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="249" y="7" key="#Project_Structure" timestamp="1608817969431">
-      <screen x="0" y="0" width="1536" height="864" />
-    </state>
-    <state x="249" y="7" key="#Project_Structure/0.0.1536.864@0.0.1536.864" timestamp="1608817969431" />
-    <state x="574" y="139" key="#com.intellij.ide.util.MemberChooser" timestamp="1608917443513">
-      <screen x="0" y="0" width="1536" height="864" />
-    </state>
-    <state x="574" y="139" key="#com.intellij.ide.util.MemberChooser/0.0.1536.864@0.0.1536.864" timestamp="1608917443513" />
-    <state x="193" y="357" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1608907389286">
-      <screen x="0" y="0" width="1536" height="864" />
-    </state>
-    <state x="193" y="357" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1536.864@0.0.1536.864" timestamp="1608907389286" />
-    <state x="551" y="301" width="481" height="267" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1608907657083">
-      <screen x="0" y="0" width="1536" height="864" />
-    </state>
-    <state x="551" y="301" width="481" height="267" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1536.864@0.0.1536.864" timestamp="1608907657083" />
-    <state x="566" y="314" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages" timestamp="1608906115992">
-      <screen x="0" y="0" width="1536" height="864" />
-    </state>
-    <state x="566" y="314" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages/0.0.1536.864@0.0.1536.864" timestamp="1608906115992" />
-    <state x="78" y="2" key="CommitChangelistDialog2" timestamp="1608980513243">
-      <screen x="0" y="0" width="1536" height="864" />
-    </state>
-    <state x="78" y="2" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1608980513243" />
-    <state x="549" y="187" key="FileChooserDialogImpl" timestamp="1608887114192">
-      <screen x="0" y="0" width="1536" height="864" />
-    </state>
-    <state x="549" y="187" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1608887114192" />
-    <state width="1493" height="322" key="GridCell.Tab.0.bottom" timestamp="1608980359428">
-      <screen x="0" y="0" width="1536" height="864" />
-    </state>
-    <state width="1493" height="213" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1608752585014" />
-    <state width="1493" height="322" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1608980359428" />
-    <state width="1493" height="322" key="GridCell.Tab.0.center" timestamp="1608980359428">
-      <screen x="0" y="0" width="1536" height="864" />
-    </state>
-    <state width="1493" height="213" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1608752585014" />
-    <state width="1493" height="322" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1608980359428" />
-    <state width="1493" height="322" key="GridCell.Tab.0.left" timestamp="1608980359428">
-      <screen x="0" y="0" width="1536" height="864" />
-    </state>
-    <state width="1493" height="213" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1608752585014" />
-    <state width="1493" height="322" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1608980359428" />
-    <state width="1493" height="322" key="GridCell.Tab.0.right" timestamp="1608980359428">
-      <screen x="0" y="0" width="1536" height="864" />
-    </state>
-    <state width="1493" height="213" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1608752585014" />
-    <state width="1493" height="322" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1608980359428" />
-    <state width="1493" height="322" key="GridCell.Tab.1.bottom" timestamp="1608980359429">
-      <screen x="0" y="0" width="1536" height="864" />
-    </state>
-    <state width="1493" height="213" key="GridCell.Tab.1.bottom/0.0.1536.834@0.0.1536.834" timestamp="1608752585014" />
-    <state width="1493" height="322" key="GridCell.Tab.1.bottom/0.0.1536.864@0.0.1536.864" timestamp="1608980359429" />
-    <state width="1493" height="322" key="GridCell.Tab.1.center" timestamp="1608980359428">
-      <screen x="0" y="0" width="1536" height="864" />
-    </state>
-    <state width="1493" height="213" key="GridCell.Tab.1.center/0.0.1536.834@0.0.1536.834" timestamp="1608752585014" />
-    <state width="1493" height="322" key="GridCell.Tab.1.center/0.0.1536.864@0.0.1536.864" timestamp="1608980359428" />
-    <state width="1493" height="322" key="GridCell.Tab.1.left" timestamp="1608980359428">
-      <screen x="0" y="0" width="1536" height="864" />
-    </state>
-    <state width="1493" height="213" key="GridCell.Tab.1.left/0.0.1536.834@0.0.1536.834" timestamp="1608752585014" />
-    <state width="1493" height="322" key="GridCell.Tab.1.left/0.0.1536.864@0.0.1536.864" timestamp="1608980359428" />
-    <state width="1493" height="322" key="GridCell.Tab.1.right" timestamp="1608980359428">
-      <screen x="0" y="0" width="1536" height="864" />
-    </state>
-    <state width="1493" height="213" key="GridCell.Tab.1.right/0.0.1536.834@0.0.1536.834" timestamp="1608752585014" />
-    <state width="1493" height="322" key="GridCell.Tab.1.right/0.0.1536.864@0.0.1536.864" timestamp="1608980359428" />
-    <state width="1493" height="585" key="GridCell.Tab.2.bottom" timestamp="1608924801929">
-      <screen x="0" y="0" width="1536" height="864" />
-    </state>
-    <state width="1493" height="585" key="GridCell.Tab.2.bottom/0.0.1536.864@0.0.1536.864" timestamp="1608924801929" />
-    <state width="1493" height="585" key="GridCell.Tab.2.center" timestamp="1608924801929">
-      <screen x="0" y="0" width="1536" height="864" />
-    </state>
-    <state width="1493" height="585" key="GridCell.Tab.2.center/0.0.1536.864@0.0.1536.864" timestamp="1608924801929" />
-    <state width="1493" height="585" key="GridCell.Tab.2.left" timestamp="1608924801929">
-      <screen x="0" y="0" width="1536" height="864" />
-    </state>
-    <state width="1493" height="585" key="GridCell.Tab.2.left/0.0.1536.864@0.0.1536.864" timestamp="1608924801929" />
-    <state width="1493" height="585" key="GridCell.Tab.2.right" timestamp="1608924801929">
-      <screen x="0" y="0" width="1536" height="864" />
-    </state>
-    <state width="1493" height="585" key="GridCell.Tab.2.right/0.0.1536.864@0.0.1536.864" timestamp="1608924801929" />
-    <state x="299" y="87" key="Maven.ArtifactSearchDialog" timestamp="1608904431053">
-      <screen x="0" y="0" width="1536" height="864" />
-    </state>
-    <state x="299" y="87" key="Maven.ArtifactSearchDialog/0.0.1536.864@0.0.1536.864" timestamp="1608904431053" />
-    <state x="361" y="152" key="Vcs.Push.Dialog.v2" timestamp="1608980516081">
-      <screen x="0" y="0" width="1536" height="864" />
-    </state>
-    <state x="361" y="152" key="Vcs.Push.Dialog.v2/0.0.1536.864@0.0.1536.864" timestamp="1608980516081" />
-    <state x="360" y="93" key="new project wizard" timestamp="1608907729061">
-      <screen x="0" y="0" width="1536" height="864" />
-    </state>
-    <state x="360" y="93" key="new project wizard/0.0.1536.864@0.0.1536.864" timestamp="1608907729061" />
-    <state x="431" y="181" width="672" height="678" key="search.everywhere.popup" timestamp="1608978746201">
-      <screen x="0" y="0" width="1536" height="864" />
-    </state>
-    <state x="431" y="181" width="672" height="678" key="search.everywhere.popup/0.0.1536.864@0.0.1536.864" timestamp="1608978746201" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/monitorapp/src/main/java/com/monitor/database/web/controller/NotificationController.java</url>
-          <line>21</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/monitorapp/src/main/java/com/monitor/database/service/NotificationService.java</url>
-          <line>34</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/monitorapp/src/main/java/com/monitor/database/service/NotificationService.java</url>
-          <line>20</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="user register" />
+    <MESSAGE value="user register and user delete complete" />
+    <option name="LAST_COMMIT_MESSAGE" value="user register and user delete complete" />
   </component>
 </project>
