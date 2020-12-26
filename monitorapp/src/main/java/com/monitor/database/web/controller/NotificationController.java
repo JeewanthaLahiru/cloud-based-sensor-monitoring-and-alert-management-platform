@@ -1,4 +1,4 @@
-package com.monitor.database.web.controller;
+/*package com.monitor.database.web.controller;
 
 import com.monitor.database.model.Notification;
 import com.monitor.database.service.NotificationService;
@@ -28,4 +28,4 @@ public class NotificationController {
         return this.notificationService.getAllByTailing().delayElements(Duration.ofSeconds(1));
     }
 
-}
+}*/

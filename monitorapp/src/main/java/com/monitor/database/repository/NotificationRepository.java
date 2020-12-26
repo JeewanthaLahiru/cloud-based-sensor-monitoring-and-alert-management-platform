@@ -1,4 +1,4 @@
-package com.monitor.database.repository;
+/*package com.monitor.database.repository;
 
 import com.monitor.database.model.Notification;
 import org.springframework.data.mongodb.repository.Tailable;
@@ -10,4 +10,4 @@ public interface NotificationRepository extends ReactiveCrudRepository<Notificat
     @Tailable
     Flux<Notification> findWithTailableCursorBy();
 
-}
+}*/
