@@ -30,7 +30,6 @@ public class NotificationReactiveController {
 
     @GetMapping(produces = MediaType.TEXT_EVENT_STREAM_VALUE)
     public Flux<Notification> getByTailing() {
-        System.out.println("fgrhfgd");
         Flux<Notification> stream = notificationReactiveRepository.findByTime("24");
         Disposable subscription = stream.doOnNext(System.out::println).subscribe();
         return stream;
