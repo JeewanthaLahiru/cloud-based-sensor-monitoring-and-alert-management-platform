@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { AboutComponent } from './about/about.component';
 import { AuthGuard } from './auth.guard';
 import { HomeComponent } from './home/home.component';
 import { HumidityComponent } from './humidity/humidity.component';
@@ -25,6 +26,7 @@ const routes: Routes = [
       {path:'pressure',component:PressureComponent}
     ]
   },
+  {path:'about',component:AboutComponent},
   {path:'login',component:LoginComponent},
   {path:'register',component:RegisterComponent},
   {path:'**',component:NotFoundComponent}
