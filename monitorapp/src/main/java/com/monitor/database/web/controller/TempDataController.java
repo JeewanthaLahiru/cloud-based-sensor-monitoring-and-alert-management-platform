@@ -2,9 +2,8 @@ package com.monitor.database.web.controller;
 
 import com.monitor.database.model.TempData;
 import com.monitor.database.repository.TempDataRepository;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
+import reactor.core.publisher.Mono;
 
 import java.util.List;
 
@@ -22,4 +21,11 @@ public class TempDataController {
     public List<TempData> getAll() {
         return this.tempDataRepository.findAll();
     }
+
+
+    @PostMapping("value")
+    public void post(@RequestBody TempData tempData) {
+        this.tempDataRepository.save(tempData);
+    }
+
 }
