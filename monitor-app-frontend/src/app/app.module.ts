@@ -17,6 +17,7 @@ import { AuthGuard } from './auth.guard';
 import { TemperatureComponent } from './temperature/temperature.component';
 import { HumidityComponent } from './humidity/humidity.component';
 import { PressureComponent } from './pressure/pressure.component';
+import { AboutComponent } from './about/about.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { PressureComponent } from './pressure/pressure.component';
     NotFoundComponent,
     TemperatureComponent,
     HumidityComponent,
-    PressureComponent
+    PressureComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,
