@@ -24,7 +24,7 @@ public class TempDataRepositoryListener extends AbstractMongoEventListener<TempD
         TempData tempData = event.getSource();
         if (Integer.parseInt(tempData.getData_value().substring(0,2)) > DatabaseListenerConfig.TEMP_THRESHOLD) {
             this.notificationReactiveRepository.save(new Notification(tempData.getDate(), tempData.getData_value().substring(0,2))).subscribe();
-            System.out.println("Your current temperature exceeded the threshold value!!!");
+            System.out.println("\n\nYour current temperature exceeded the threshold value!!!\n\n");
         }
     }
 }
