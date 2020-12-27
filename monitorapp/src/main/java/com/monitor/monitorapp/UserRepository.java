@@ -1,7 +1,14 @@
 package com.monitor.monitorapp;
 
-public interface UserRepository {
-    User getUser(String id);
+import org.springframework.data.mongodb.repository.MongoRepository;
+import org.springframework.data.mongodb.repository.Query;
+import org.springframework.stereotype.Repository;
 
-    void addUser(User user);
+import java.util.List;
+
+@Repository
+public interface UserRepository extends MongoRepository<User,String> {
+    User findByEmail(String email);
+    User findByPassword(String password);
+
 }
