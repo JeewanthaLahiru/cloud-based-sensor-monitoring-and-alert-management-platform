@@ -4,26 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="60958156-79eb-4e39-8626-dff2bf03fc58" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mongodb_mongodb_driver_reactivestreams_4_1_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_devtools_2_4_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_data_mongodb_reactive_2_4_1.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+    <list default="true" id="60958156-79eb-4e39-8626-dff2bf03fc58" name="Default Changelist" comment="BUG FIX DAY 2">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/monitorapp/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/monitorapp/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/monitorapp/.mvn/wrapper/MavenWrapperDownloader.java" beforeDir="false" afterPath="$PROJECT_DIR$/monitorapp/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/monitorapp/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/monitorapp/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/monitorapp/mvnw" beforeDir="false" afterPath="$PROJECT_DIR$/monitorapp/mvnw" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/monitorapp/mvnw.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/monitorapp/mvnw.cmd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/monitorapp/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/monitorapp/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/monitorapp/src/main/java/com/monitor/MonitorappApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/monitorapp/src/main/java/com/monitor/MonitorappApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/monitorapp/src/main/java/com/monitor/database/repository/NotificationRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/monitorapp/src/main/java/com/monitor/database/repository/NotificationRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/monitorapp/src/main/java/com/monitor/database/service/NotificationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/monitorapp/src/main/java/com/monitor/database/service/NotificationService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/monitorapp/src/main/java/com/monitor/database/web/controller/NotificationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/monitorapp/src/main/java/com/monitor/database/web/controller/NotificationController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/monitorapp/src/main/java/com/monitor/database/web/controller/NotificationReactiveController.java" beforeDir="false" afterPath="$PROJECT_DIR$/monitorapp/src/main/java/com/monitor/database/web/controller/NotificationReactiveController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/monitorapp/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/monitorapp/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/monitorapp/src/test/java/com/monitor/monitorapp/MonitorappApplicationTests.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -145,7 +127,7 @@
       <workItem from="1608829460955" duration="5078000" />
       <workItem from="1608872922917" duration="1917000" />
       <workItem from="1608890961447" duration="11734000" />
-      <workItem from="1609053149644" duration="1837000" />
+      <workItem from="1609053149644" duration="2476000" />
     </task>
     <task id="LOCAL-00001" summary="user register">
       <created>1608752726614</created>
@@ -161,7 +143,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608901446933</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="BUG FIX DAY 2">
+      <created>1609055645153</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1609055645153</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -170,45 +159,58 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="user register" />
     <MESSAGE value="user register and user delete complete" />
-    <option name="LAST_COMMIT_MESSAGE" value="user register and user delete complete" />
+    <MESSAGE value="BUG FIX DAY 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="BUG FIX DAY 2" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1493" height="473" key="GridCell.Tab.0.bottom" timestamp="1609053773689">
+    <state x="293" y="1" key="CommitChangelistDialog2" timestamp="1609056173332">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="473" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1609053773689" />
-    <state width="1493" height="473" key="GridCell.Tab.0.center" timestamp="1609053773689">
+    <state x="293" y="1" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1609056173332" />
+    <state width="1493" height="473" key="GridCell.Tab.0.bottom" timestamp="1609056113696">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="473" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1609053773689" />
-    <state width="1493" height="473" key="GridCell.Tab.0.left" timestamp="1609053773689">
+    <state width="1493" height="473" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1609056113696" />
+    <state width="1493" height="473" key="GridCell.Tab.0.center" timestamp="1609056113696">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="473" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1609053773689" />
-    <state width="1493" height="473" key="GridCell.Tab.0.right" timestamp="1609053773689">
+    <state width="1493" height="473" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1609056113696" />
+    <state width="1493" height="473" key="GridCell.Tab.0.left" timestamp="1609056113696">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="473" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1609053773689" />
-    <state width="1493" height="473" key="GridCell.Tab.1.bottom" timestamp="1609053773689">
+    <state width="1493" height="473" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1609056113696" />
+    <state width="1493" height="473" key="GridCell.Tab.0.right" timestamp="1609056113696">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="473" key="GridCell.Tab.1.bottom/0.0.1536.864@0.0.1536.864" timestamp="1609053773689" />
-    <state width="1493" height="473" key="GridCell.Tab.1.center" timestamp="1609053773689">
+    <state width="1493" height="473" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1609056113696" />
+    <state width="1493" height="473" key="GridCell.Tab.1.bottom" timestamp="1609056113696">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="473" key="GridCell.Tab.1.center/0.0.1536.864@0.0.1536.864" timestamp="1609053773689" />
-    <state width="1493" height="473" key="GridCell.Tab.1.left" timestamp="1609053773689">
+    <state width="1493" height="473" key="GridCell.Tab.1.bottom/0.0.1536.864@0.0.1536.864" timestamp="1609056113696" />
+    <state width="1493" height="473" key="GridCell.Tab.1.center" timestamp="1609056113696">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="473" key="GridCell.Tab.1.left/0.0.1536.864@0.0.1536.864" timestamp="1609053773689" />
-    <state width="1493" height="473" key="GridCell.Tab.1.right" timestamp="1609053773689">
+    <state width="1493" height="473" key="GridCell.Tab.1.center/0.0.1536.864@0.0.1536.864" timestamp="1609056113696" />
+    <state width="1493" height="473" key="GridCell.Tab.1.left" timestamp="1609056113696">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="473" key="GridCell.Tab.1.right/0.0.1536.864@0.0.1536.864" timestamp="1609053773689" />
+    <state width="1493" height="473" key="GridCell.Tab.1.left/0.0.1536.864@0.0.1536.864" timestamp="1609056113696" />
+    <state width="1493" height="473" key="GridCell.Tab.1.right" timestamp="1609056113696">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1493" height="473" key="GridCell.Tab.1.right/0.0.1536.864@0.0.1536.864" timestamp="1609056113696" />
+    <state x="407" y="194" key="MultipleFileMergeDialog" timestamp="1609055705155">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="407" y="194" key="MultipleFileMergeDialog/0.0.1536.864@0.0.1536.864" timestamp="1609055705155" />
     <state x="249" y="7" key="SettingsEditor" timestamp="1609052372805">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="249" y="7" key="SettingsEditor/0.0.1536.864@0.0.1536.864" timestamp="1609052372805" />
+    <state x="361" y="152" key="Vcs.Push.Dialog.v2" timestamp="1609055656032">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="361" y="152" key="Vcs.Push.Dialog.v2/0.0.1536.864@0.0.1536.864" timestamp="1609055656032" />
     <state x="720" y="146" key="new project wizard" timestamp="1609052497760">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
