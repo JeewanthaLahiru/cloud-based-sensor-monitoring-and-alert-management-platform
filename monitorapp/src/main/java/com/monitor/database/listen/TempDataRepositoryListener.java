@@ -23,7 +23,7 @@ public class TempDataRepositoryListener extends AbstractMongoEventListener<TempD
         super.onBeforeSave(event);
         TempData tempData = event.getSource();
         if (Integer.parseInt(tempData.getData_value().substring(0,2)) > DatabaseListenerConfigurator.TEMP_THRESHOLD) {
-            this.notificationReactiveRepository.save(new Notification(tempData.getDate(),tempData.getData_value()));
+            this.notificationReactiveRepository.save(new Notification(tempData.getDate(), tempData.getData_value())).subscribe();
             System.out.println("Saved");
         }
     }
