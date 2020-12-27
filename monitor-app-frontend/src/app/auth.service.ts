@@ -10,6 +10,7 @@ export class AuthService {
 
   private _registerUrl = "http://localhost:3000/api/register";
   private _loginUrl = "http://localhost:3000/api/login";
+  private _getCurrentUserUrl = "http://localhost:3000/api/getCurrentUser";
 
   constructor(private _http:HttpClient) { }
 
@@ -27,6 +28,11 @@ export class AuthService {
 
   getToken(){
     return localStorage.getItem('token');
+  }
+
+  getCurrentUser(){
+    let token = localStorage.getItem('token');
+    return this._http.post<any>(this._getCurrentUserUrl,token);
   }
 
 }
