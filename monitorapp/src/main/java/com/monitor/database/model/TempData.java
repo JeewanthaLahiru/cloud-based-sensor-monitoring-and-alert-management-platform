@@ -28,4 +28,12 @@ public class TempData {
     public void setDate(String date) {
         this.date = date;
     }
+
+    public String getData_value() {
+        return data_value;
+    }
+
+    public void setData_value(String data_value) {
+        this.data_value = data_value;
+    }
 }
