@@ -1,6 +1,7 @@
 package com.monitor.database.listen;
 
 import com.monitor.database.configure.DatabaseListenerConfigurator;
+import com.monitor.database.model.Notification;
 import com.monitor.database.model.TempData;
 import com.monitor.database.repository.NotificationReactiveRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,9 +21,9 @@ public class TempDataRepositoryListener extends AbstractMongoEventListener<TempD
     @Override
     public void onBeforeSave(BeforeSaveEvent<TempData> event) {
         super.onBeforeSave(event);
-
-        if (Integer.parseInt(event.getSource().getData_value().substring(0,2)) > DatabaseListenerConfigurator.TEMP_THRESHOLD) {
-            System.out.println(this.notificationReactiveRepository);
+        TempData tempData = event.getSource();
+        if (Integer.parseInt(tempData.getData_value().substring(0,2)) > DatabaseListenerConfigurator.TEMP_THRESHOLD) {
+            this.notificationReactiveRepository.save(new Notification(tempData.getDate(),tempData.getData_value()));
             System.out.println("Saved");
         }
     }
