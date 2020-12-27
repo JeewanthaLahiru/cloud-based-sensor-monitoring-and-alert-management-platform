@@ -1,1 +1,16 @@
-<p>about works!</p>
+<h2 class="header mt-5" style="text-align: center;">Meet our team behind the Monitor application</h2>
+<hr class="w-75 my-5" style="margin: auto;">
+<div class="container w-75">
+    <div class="row">
+        <div class="col-md-4 col-sm-6 my-3" *ngFor='let user of users'>
+            <div class="card">
+                <div class="card-body">
+                    <img src="{{user.image}}" alt="" style="width: 100%; ">
+                    <h5 class="card-title">{{user.name}}</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">{{user.studentNumber}}</h6>
+                    <p class="card-text">{{user.part}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
