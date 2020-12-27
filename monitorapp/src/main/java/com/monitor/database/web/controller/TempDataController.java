@@ -5,6 +5,9 @@ import com.monitor.database.repository.TempDataRepository;
 import org.springframework.web.bind.annotation.*;
 import reactor.core.publisher.Mono;
 
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
 import java.util.List;
 
 @RestController
@@ -23,8 +26,11 @@ public class TempDataController {
     }
 
 
-    @PostMapping("value")
+    @PostMapping("/value")
     public void post(@RequestBody TempData tempData) {
+        DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+        Calendar cal = Calendar.getInstance();
+        tempData.setDate(dateFormat.format(cal.getTime()));
         this.tempDataRepository.save(tempData);
     }
 
