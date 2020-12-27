@@ -1,6 +1,6 @@
 package com.monitor.database.listen;
 
-import com.monitor.database.configure.DatabaseListenerConfigurator;
+import com.monitor.database.configure.DatabaseListenerConfig;
 import com.monitor.database.model.Notification;
 import com.monitor.database.model.TempData;
 import com.monitor.database.repository.NotificationReactiveRepository;
@@ -22,7 +22,7 @@ public class TempDataRepositoryListener extends AbstractMongoEventListener<TempD
     public void onBeforeSave(BeforeSaveEvent<TempData> event) {
         super.onBeforeSave(event);
         TempData tempData = event.getSource();
-        if (Integer.parseInt(tempData.getData_value().substring(0,2)) > DatabaseListenerConfigurator.TEMP_THRESHOLD) {
+        if (Integer.parseInt(tempData.getData_value().substring(0,2)) > DatabaseListenerConfig.TEMP_THRESHOLD) {
             this.notificationReactiveRepository.save(new Notification(tempData.getDate(), tempData.getData_value().substring(0,2))).subscribe();
             System.out.println("Your current temperature exceeded the threshold value!!!");
         }

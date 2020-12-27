@@ -7,14 +7,14 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
-public class DatabaseListenerConfigurator {
+public class DatabaseListenerConfig {
 
     public static final int TEMP_THRESHOLD = 24;
 
     private NotificationReactiveRepository notificationReactiveRepository;
 
     @Autowired
-    public DatabaseListenerConfigurator(NotificationReactiveRepository notificationReactiveRepository) {
+    public DatabaseListenerConfig(NotificationReactiveRepository notificationReactiveRepository) {
         this.notificationReactiveRepository = notificationReactiveRepository;
     }
 
