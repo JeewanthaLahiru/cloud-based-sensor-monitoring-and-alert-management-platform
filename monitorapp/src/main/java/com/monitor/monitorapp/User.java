@@ -21,6 +21,8 @@ public class User {
         this.notification=notification;
     }
 
+    public User() {
+    }
 
     public String getId() {
         return id;

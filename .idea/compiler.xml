@@ -16,7 +16,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="monitorapp" options="-parameters --add-exports jdk.internal.le/jdk.internal.org.jline.utils=ALL-UNNAMED" />
+      <module name="monitorapp" options="-parameters" />
     </option>
   </component>
 </project>
