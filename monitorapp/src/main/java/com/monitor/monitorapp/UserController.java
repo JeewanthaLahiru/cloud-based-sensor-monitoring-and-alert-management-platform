@@ -1,14 +1,20 @@
 package com.monitor.monitorapp;
 
 import com.monitor.monitorapp.utility.JWTUtility;
-import com.nimbusds.jose.shaded.json.JSONObject;
-import com.nimbusds.jose.shaded.json.parser.JSONParser;
-import com.nimbusds.jose.shaded.json.parser.ParseException;
+import com.sun.el.parser.Token;
+import io.jsonwebtoken.Claims;
+import io.jsonwebtoken.Jwts;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.web.bind.annotation.*;
 
+import javax.servlet.http.HttpServletRequestWrapper;
+import javax.xml.bind.DatatypeConverter;
 import java.util.List;
+import java.util.Optional;
 
+import static javax.crypto.Cipher.SECRET_KEY;
+import static jdk.internal.org.jline.utils.InfoCmp.Capability.user1;
 import static org.springframework.web.servlet.function.RouterFunctions.route;
 
 @CrossOrigin(origins ="http://localhost:4200")
@@ -62,6 +68,13 @@ public class UserController {
             final String token=jwtUtility.generateToken(user2.getId());
             return new JwtResponse(token);
     }
-
+    @GetMapping("/now")
+    public static Claims  getCurrentUser(String jwt){
+            //This line will throw an exception if it is not a signed JWS (as expected)
+            Claims claims = Jwts.parser()
+                    .setSigningKey(DatatypeConverter.parseBase64Binary(String.valueOf(SECRET_KEY)))
+                    .parseClaimsJws(jwt).getBody();
+            return claims;
+    }
 
 }
