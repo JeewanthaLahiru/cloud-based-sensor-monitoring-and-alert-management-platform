@@ -11,16 +11,14 @@ public class DatabaseListenerConfig {
 
     public static final int TEMP_THRESHOLD = 24;
 
-    private NotificationReactiveRepository notificationReactiveRepository;
 
     @Autowired
-    public DatabaseListenerConfig(NotificationReactiveRepository notificationReactiveRepository) {
-        this.notificationReactiveRepository = notificationReactiveRepository;
+    public DatabaseListenerConfig() {
     }
 
     @Bean
     public TempDataRepositoryListener tempDataRepositoryListener() {
-        return new TempDataRepositoryListener(notificationReactiveRepository);
+        return new TempDataRepositoryListener();
     }
 
 }

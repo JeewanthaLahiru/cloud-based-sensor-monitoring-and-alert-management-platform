@@ -1,14 +1,14 @@
 package com.monitor.database.web.controller;
 
 import com.monitor.database.model.Notification;
+import com.monitor.database.model.TempData;
 import com.monitor.database.repository.NotificationReactiveRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 import reactor.core.Disposable;
 import reactor.core.publisher.Flux;
+import reactor.core.publisher.Mono;
 
 @RestController
 @RequestMapping("/notification/mongodb")
@@ -23,10 +23,14 @@ public class NotificationReactiveController {
         this.notificationReactiveRepository = notificationReactiveRepository;
     }
 
-    /*@PostMapping
-    public Mono<Notification> post(@RequestBody Notification notification) {
-        return notificationService.save(notification);
-    }*/
+    @PostMapping("/send")
+    public Mono<Notification> post(@RequestBody TempData tempData) {
+        String data_value = tempData.getData_value();
+        String date = tempData.getDate();
+        Notification notification = new Notification(date, data_value);
+        System.out.println("listening");
+        return this.notificationReactiveRepository.save(notification);
+    }
 
     @GetMapping(produces = MediaType.TEXT_EVENT_STREAM_VALUE)
     public Flux<Notification> getByTailing() {
