@@ -21,6 +21,8 @@ public class Notification {
 
     private String temp;
 
-
-
+    public Notification(String time, String temp) {
+        this.time = time;
+        this.temp = temp;
+    }
 }

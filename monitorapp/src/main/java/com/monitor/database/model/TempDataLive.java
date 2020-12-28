@@ -1,4 +1,4 @@
-package com.monitor.database.model;
+/*package com.monitor.database.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -11,8 +11,8 @@ import org.springframework.data.mongodb.core.mapping.Document;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-@Document(collection = "tempdata")
-public class TempData {
+@Document(collection = "temp_data_live")
+public class TempDataLive {
 
     @Id
     private String id;
@@ -36,4 +36,4 @@ public class TempData {
     public void setData_value(String data_value) {
         this.data_value = data_value;
     }
-}
+}*/
