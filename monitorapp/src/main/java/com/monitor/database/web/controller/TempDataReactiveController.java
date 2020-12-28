@@ -2,6 +2,7 @@ package com.monitor.database.web.controller;
 
 
 import com.monitor.database.model.TempData;
+import com.monitor.database.model.TempDataLive;
 import com.monitor.database.repository.TempDataReactiveRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -21,8 +22,8 @@ public class TempDataReactiveController {
     }
 
     @GetMapping("/all")
-    public Flux<TempData> getByTailing() {
-        Flux<TempData> tempDataFlux = this.tempDataReactiveRepository.findAll();
+    public Flux<TempDataLive> getByTailing() {
+        Flux<TempDataLive> tempDataFlux = this.tempDataReactiveRepository.findAll();
         return tempDataFlux;
     }
 
