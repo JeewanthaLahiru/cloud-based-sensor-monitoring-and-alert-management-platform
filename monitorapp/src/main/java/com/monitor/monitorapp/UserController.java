@@ -1,11 +1,16 @@
 package com.monitor.monitorapp;
 
+
+import com.monitor.monitorapp.utility.JWTUtility;
+import io.jsonwebtoken.Claims;
+import io.jsonwebtoken.Jwts;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import javax.xml.bind.DatatypeConverter;
 import java.util.List;
 
-import static org.springframework.web.servlet.function.RouterFunctions.route;
+import static javax.crypto.Cipher.SECRET_KEY;
 
 @CrossOrigin(origins ="http://localhost:4200")
 @RestController
@@ -13,16 +18,21 @@ import static org.springframework.web.servlet.function.RouterFunctions.route;
 public class UserController {
 
     private UserRepository userRepository;
+    private final JWTUtility jwtUtility;
+
     @Autowired
-    public UserController(UserRepository userRepository) {
+    public UserController(UserRepository userRepository, JWTUtility jwtUtility) {
         this.userRepository = userRepository;
+        this.jwtUtility = jwtUtility;
     }
 
 //add user
-    @PostMapping(value = "/add",produces = "application/json")
-    public User insert(@RequestBody User user) {
+    @PostMapping("/add")
+    public Object insert(@RequestBody User user) {
         this.userRepository.insert(user);
-        return user;
+        User user1=this.userRepository.findByEmail(user.getEmail());
+        final String token=jwtUtility.generateToken(user1.getId());
+        return new JwtResponse(token);
     }
 
 //get all users list
@@ -38,7 +48,7 @@ public class UserController {
     }
 //find user by email
     @PostMapping( "/login")
-    public Object login(@RequestBody User user){
+    public Object login(@RequestBody User user) {
             User user1=this.userRepository.findByEmail(user.getEmail());
             User user2=this.userRepository.findByPassword(user.getPassword());
             if (user1 == null && user2 == null) {
@@ -50,7 +60,16 @@ public class UserController {
             if (user2 == null) {
                 return new String[]{"Wrong Password"};
             }
-        return user2;
+            final String token=jwtUtility.generateToken(user2.getId());
+            return new JwtResponse(token);
+    }
+    @GetMapping("/now")
+    public static Claims  getCurrentUser(String jwt){
+            //This line will throw an exception if it is not a signed JWS (as expected)
+            Claims claims = Jwts.parser()
+                    .setSigningKey(DatatypeConverter.parseBase64Binary(String.valueOf(SECRET_KEY)))
+                    .parseClaimsJws(jwt).getBody();
+            return claims;
     }
 
 }
