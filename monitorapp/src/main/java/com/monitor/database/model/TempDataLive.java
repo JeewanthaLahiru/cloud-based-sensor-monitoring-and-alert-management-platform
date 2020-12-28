@@ -1,4 +1,4 @@
-package com.monitor.database.model;
+/*package com.monitor.database.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -36,4 +36,4 @@ public class TempDataLive {
     public void setData_value(String data_value) {
         this.data_value = data_value;
     }
-}
+}*/

@@ -1,4 +1,4 @@
-package com.monitor.database.repository;
+/*package com.monitor.database.repository;
 
 import com.monitor.database.model.TempData;
 import com.monitor.database.model.TempDataLive;
@@ -8,4 +8,4 @@ import reactor.core.publisher.Flux;
 
 public interface TempDataReactiveRepository extends ReactiveMongoRepository<TempDataLive, String> {
 
-}
+}*/

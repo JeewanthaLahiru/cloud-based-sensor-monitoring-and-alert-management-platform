@@ -28,9 +28,6 @@ public class TempDataController {
 
     @PostMapping("/value")
     public void post(@RequestBody TempData tempData) {
-        DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
-        Calendar cal = Calendar.getInstance();
-        tempData.setDate(dateFormat.format(cal.getTime()));
         this.tempDataRepository.save(tempData);
     }
 
