@@ -1,4 +1,10 @@
+// @ts-ignore
 import { Injectable } from '@angular/core';
+// @ts-ignore
+import { CanActivate, Router } from '@angular/router';
+// @ts-ignore
+import { Injectable } from '@angular/core';
+// @ts-ignore
 import { CanActivate, Router } from '@angular/router';
 import { AuthService } from './auth.service';
 
@@ -7,7 +13,7 @@ import { AuthService } from './auth.service';
 })
 export class AuthGuard implements CanActivate {
   constructor(private _authService:AuthService,
-    private _router:Router){}
+              private _router:Router){}
 
   canActivate():boolean{
     if(this._authService.loggedIn()){
@@ -17,5 +23,6 @@ export class AuthGuard implements CanActivate {
       return false;
     }
   }
-  
+
+
 }

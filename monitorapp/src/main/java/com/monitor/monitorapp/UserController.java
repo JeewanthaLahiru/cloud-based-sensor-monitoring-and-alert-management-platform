@@ -1,5 +1,6 @@
 package com.monitor.monitorapp;
 
+import com.monitor.monitorapp.utility.JWTUtility;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -13,6 +14,9 @@ import static org.springframework.web.servlet.function.RouterFunctions.route;
 public class UserController {
 
     private UserRepository userRepository;
+
+    @Autowired
+    private JWTUtility jwtUtility;
     @Autowired
     public UserController(UserRepository userRepository) {
         this.userRepository = userRepository;
@@ -50,7 +54,8 @@ public class UserController {
             if (user2 == null) {
                 return new String[]{"Wrong Password"};
             }
-        return user2;
+        String token = jwtUtility.generateToken(user2.getId());
+            return token;
     }
 
 }
