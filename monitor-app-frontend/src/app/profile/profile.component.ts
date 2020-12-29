@@ -57,6 +57,9 @@ export class ProfileComponent implements OnInit {
       this.email = data.email
       this.phone = data.phone
       this.notification = data.notification
+      if(data=="Wrong Email" || data == "Wrong Password"){
+        this._route.navigate(['login']);
+      }
     })
 
     
