@@ -1,6 +1,7 @@
 package com.monitor.database.web.controller;
 
 import com.monitor.database.model.Notification;
+import com.monitor.database.model.TempData;
 import com.monitor.database.repository.NotificationReactiveRepository;
 import com.monitor.Authentication.entity.User;
 import com.monitor.Authentication.Repository.UserRepository;
@@ -39,19 +40,10 @@ public class NotificationReactiveController {
         String data_value = sensors.getData_value();
         String date = sensors.getDate();
         Notification notification = new Notification(date, data_value);
-        System.out.println("listening");
         return this.notificationReactiveRepository.save(notification);
     }
     @GetMapping(produces = MediaType.TEXT_EVENT_STREAM_VALUE)
-    public Flux<Notification> getByTailing(@RequestHeader("Authorization") String jwt){
-        String token = jwt.substring(7);
-        String username = jwtUtility.getDetailsFromToken(token);
-        String email = username.substring(0, username.indexOf(','));
-        User user=this.userRepository.findByEmail(email);
-        String notificationMethod = user.getNotification();
-        String name =user.getName();
-        String e_mail =user.getEmail();
-        String phone = user.getPhone();
+    public Flux<Notification> getByTailing(){
         Flux<Notification> stream = notificationReactiveRepository.findByTime("24");
         Disposable subscription = stream.doOnNext(System.out::println).subscribe();
         return stream;
