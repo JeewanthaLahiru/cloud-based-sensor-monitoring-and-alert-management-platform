@@ -6,6 +6,7 @@ import { HomeComponent } from './home/home.component';
 import { HumidityComponent } from './humidity/humidity.component';
 import { LoginComponent } from './login/login.component';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { NotificationComponent } from './notification/notification.component';
 import { PressureComponent } from './pressure/pressure.component';
 import { ProfileComponent } from './profile/profile.component';
 import { RegisterComponent } from './register/register.component';

@@ -29,6 +29,9 @@ export class ProfileComponent implements OnInit {
   name:string
   email:string
   phone:string
+  notification:string
+
+  notificationMethod:string
 
   _token = localStorage.getItem('token')
 
@@ -53,7 +56,10 @@ export class ProfileComponent implements OnInit {
       this.name = data.name
       this.email = data.email
       this.phone = data.phone
+      this.notification = data.notification
     })
+
+    
 
   }
 
@@ -76,6 +82,10 @@ export class ProfileComponent implements OnInit {
   logOut(){
     localStorage.removeItem('token');
     this._route.navigate(['/login'])
+  }
+
+  onSelect(){
+    this._route.navigate(['/profile',1])
   }
 
 }
