@@ -17,12 +17,16 @@ public class Notification {
     @Id
     private String id;
 
+    private String sensor;
+
     private String time;
 
     private String temp;
 
-    public Notification(String time, String temp) {
+    public Notification(String time, String temp,String sensor) {
         this.time = time;
         this.temp = temp;
+        this.sensor=sensor;
     }
+
 }

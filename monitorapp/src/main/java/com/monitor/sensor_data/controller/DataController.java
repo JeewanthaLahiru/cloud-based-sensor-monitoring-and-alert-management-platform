@@ -1,5 +1,7 @@
-package com.monitor.sensor_data;
+package com.monitor.sensor_data.controller;
 
+import com.monitor.sensor_data.entity.Sensors;
+import com.monitor.sensor_data.repository.SensorDataRepository;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;

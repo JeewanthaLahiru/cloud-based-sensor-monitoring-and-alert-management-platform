@@ -1,4 +1,4 @@
-package com.monitor.sensor_data;
+package com.monitor.sensor_data.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

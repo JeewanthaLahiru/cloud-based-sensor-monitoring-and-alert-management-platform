@@ -1,5 +1,6 @@
-package com.monitor.sensor_data;
+package com.monitor.sensor_data.repository;
 
+import com.monitor.sensor_data.entity.Sensors;
 import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.data.mongodb.repository.Query;
 import org.springframework.stereotype.Repository;
