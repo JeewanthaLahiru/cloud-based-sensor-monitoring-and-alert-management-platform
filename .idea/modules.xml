@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/clone4.iml" filepath="$PROJECT_DIR$/.idea/clone4.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/cloud-based-sensor-monitoring-and-alert-management-platform.iml" filepath="$PROJECT_DIR$/.idea/cloud-based-sensor-monitoring-and-alert-management-platform.iml" />
     </modules>
   </component>
 </project>
