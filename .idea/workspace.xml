@@ -5,13 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="60958156-79eb-4e39-8626-dff2bf03fc58" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/cloud-based-sensor-monitoring-and-alert-management-platform.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/cloud-based-sensor-monitoring-and-alert-management-platform.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/monitorapp/src/main/java/com/monitor/database/model/TempDataLive.java" beforeDir="false" afterPath="$PROJECT_DIR$/monitorapp/src/main/java/com/monitor/database/model/TempDataLive.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/monitorapp/src/main/java/com/monitor/database/repository/TempDataReactiveRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/monitorapp/src/main/java/com/monitor/database/repository/TempDataReactiveRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/monitorapp/src/main/java/com/monitor/database/web/controller/NormalNotificationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/monitorapp/src/main/java/com/monitor/database/web/controller/NormalNotificationController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/monitorapp/src/main/java/com/monitor/database/web/controller/NotificationReactiveController.java" beforeDir="false" afterPath="$PROJECT_DIR$/monitorapp/src/main/java/com/monitor/database/web/controller/NotificationReactiveController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/monitorapp/src/main/java/com/monitor/database/web/controller/TempDataController.java" beforeDir="false" afterPath="$PROJECT_DIR$/monitorapp/src/main/java/com/monitor/database/web/controller/TempDataController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/monitorapp/src/main/java/com/monitor/database/web/controller/TempDataReactiveController.java" beforeDir="false" afterPath="$PROJECT_DIR$/monitorapp/src/main/java/com/monitor/database/web/controller/TempDataReactiveController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/monitor-app-frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/monitor-app-frontend/package-lock.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,6 +40,7 @@
     </option>
   </component>
   <component name="ProjectId" id="1m4RbXZtu4UQCKXkfHQch0l7ygi" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -378,13 +378,18 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="574" y="139" key="#com.intellij.ide.util.MemberChooser/0.0.1536.864@0.0.1536.864" timestamp="1609104515544" />
+    <state x="505" y="207" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1609191738488">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="505" y="207" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1536.834@0.0.1536.834" timestamp="1609191738488" />
     <state x="293" y="1" key="CommitChangelistDialog2" timestamp="1609145422014">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="293" y="1" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1609145422014" />
-    <state x="549" y="187" key="FileChooserDialogImpl" timestamp="1609097486412">
-      <screen x="0" y="0" width="1536" height="864" />
+    <state x="549" y="181" key="FileChooserDialogImpl" timestamp="1609192027318">
+      <screen x="0" y="0" width="1536" height="834" />
     </state>
+    <state x="549" y="181" key="FileChooserDialogImpl/0.0.1536.834@0.0.1536.834" timestamp="1609192027318" />
     <state x="549" y="187" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1609097486412" />
     <state width="1493" height="473" key="GridCell.Tab.0.bottom" timestamp="1609151995593">
       <screen x="0" y="0" width="1536" height="864" />
@@ -454,9 +459,10 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="418" y="56" width="1049" height="849" key="dock-window-1/0.0.1536.864@0.0.1536.864" timestamp="1609104370927" />
-    <state x="720" y="146" key="new project wizard" timestamp="1609052497760">
-      <screen x="0" y="0" width="1536" height="864" />
+    <state x="450" y="9" key="new project wizard" timestamp="1609192037974">
+      <screen x="0" y="0" width="1536" height="834" />
     </state>
+    <state x="450" y="9" key="new project wizard/0.0.1536.834@0.0.1536.834" timestamp="1609192037974" />
     <state x="720" y="146" key="new project wizard/0.0.1536.864@0.0.1536.864" timestamp="1609052497760" />
   </component>
   <component name="XDebuggerManager">
