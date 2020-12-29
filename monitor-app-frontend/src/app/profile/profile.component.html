@@ -24,6 +24,9 @@
             <div class="container-fluid my-5">
                 <router-outlet></router-outlet>
             </div>
+            <ul *ngFor='let message of messages'>
+                <li>{{message}}</li>
+            </ul>
         </div>
     </div>
 </div>
