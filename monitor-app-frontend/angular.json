@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "monitor-app-frontend"
+    }
+  },
+  "defaultProject": "monitor-app-frontend",
+  "cli": {
+    "analytics": false
+  }
 }
