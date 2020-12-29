@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="64948a89-8d6b-42c3-abdf-ff6f6e257391" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/monitorapp/src/main/java/com/monitor/database/web/controller/NotificationReactiveController.java" beforeDir="false" afterPath="$PROJECT_DIR$/monitorapp/src/main/java/com/monitor/database/web/controller/NotificationReactiveController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,7 +68,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="npm.Angular CLI Server">
+  <component name="RunManager" selected="Spring Boot.MonitorappApplication ">
     <configuration name="E2E Tests (monitor-app-frontend)" type="JavaScriptTestRunnerProtractor">
       <config-file value="$PROJECT_DIR$/monitor-app-frontend/e2e/protractor.conf.js" />
       <node-interpreter value="project" />
@@ -116,7 +117,7 @@
       <workItem from="1609159127092" duration="1515000" />
       <workItem from="1609233208982" duration="2883000" />
       <workItem from="1609236455636" duration="1451000" />
-      <workItem from="1609246881475" duration="5217000" />
+      <workItem from="1609246881475" duration="8070000" />
     </task>
     <task id="LOCAL-00001" summary="user register">
       <created>1608752726614</created>
@@ -146,7 +147,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609251313249</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="add logic for login">
+      <created>1609252897458</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1609252897458</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
