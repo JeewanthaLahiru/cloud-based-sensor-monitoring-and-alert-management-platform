@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<project version="4">
-  <component name="ProjectModuleManager">
-    <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/Merged.iml" filepath="$PROJECT_DIR$/.idea/Merged.iml" />
-      <module fileurl="file://$PROJECT_DIR$/monitorapp/monitorapp.iml" filepath="$PROJECT_DIR$/monitorapp/monitorapp.iml" />
-    </modules>
-  </component>
-</project>

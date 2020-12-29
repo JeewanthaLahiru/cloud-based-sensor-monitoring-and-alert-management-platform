@@ -39,7 +39,6 @@ public class NotificationReactiveController {
         String data_value = sensors.getData_value();
         String date = sensors.getDate();
         Notification notification = new Notification(date, data_value);
-        System.out.println("listening");
         return this.notificationReactiveRepository.save(notification);
     }
     @GetMapping(produces = MediaType.TEXT_EVENT_STREAM_VALUE)
@@ -49,9 +48,20 @@ public class NotificationReactiveController {
         String email = username.substring(0, username.indexOf(','));
         User user=this.userRepository.findByEmail(email);
         String notificationMethod = user.getNotification();
-        String name =user.getName();
-        String e_mail =user.getEmail();
-        String phone = user.getPhone();
+        if (notificationMethod.equals("Email")) {
+            System.out.println("\n==========================================================");
+            System.out.println("\n     An email has been sent to " + user.getEmail());
+            System.out.println("\n==========================================================\n");
+        } else if (notificationMethod.equals("Text message")) {
+            System.out.println("\n==========================================================");
+            System.out.println("\n     A text message has been sent to " + user.getPhone());
+            System.out.println("\n==========================================================\n");
+        } else if (notificationMethod.equals("Audio call")) {
+            System.out.println("\n==========================================================");
+            System.out.println("\n     An audio call has been sent to " + user.getPhone());
+            System.out.println("\n==========================================================\n");
+        }
+
         Flux<Notification> stream = notificationReactiveRepository.findByTime("24");
         Disposable subscription = stream.doOnNext(System.out::println).subscribe();
         return stream;
