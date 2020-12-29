@@ -5,12 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="64948a89-8d6b-42c3-abdf-ff6f6e257391" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/monitorapp/src/main/java/com/monitor/monitorapp/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/monitorapp/src/main/java/com/monitor/monitorapp/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/monitorapp/src/main/java/com/monitor/monitorapp/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/monitorapp/src/main/java/com/monitor/monitorapp/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/monitorapp/src/main/java/com/monitor/monitorapp/utility/JWTUtility.java" beforeDir="false" afterPath="$PROJECT_DIR$/monitorapp/src/main/java/com/monitor/monitorapp/utility/JWTUtility.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,7 +67,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.MonitorappApplication ">
+  <component name="RunManager" selected="npm.Angular CLI Server">
     <configuration name="E2E Tests (monitor-app-frontend)" type="JavaScriptTestRunnerProtractor">
       <config-file value="$PROJECT_DIR$/monitor-app-frontend/e2e/protractor.conf.js" />
       <node-interpreter value="project" />
@@ -121,7 +116,7 @@
       <workItem from="1609159127092" duration="1515000" />
       <workItem from="1609233208982" duration="2883000" />
       <workItem from="1609236455636" duration="1451000" />
-      <workItem from="1609246881475" duration="4135000" />
+      <workItem from="1609246881475" duration="5217000" />
     </task>
     <task id="LOCAL-00001" summary="user register">
       <created>1608752726614</created>
@@ -144,7 +139,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609235832065</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="add logic for login">
+      <created>1609251313249</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1609251313249</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -154,6 +156,7 @@
     <MESSAGE value="user register" />
     <MESSAGE value="user register and user delete complete" />
     <MESSAGE value="Get current user" />
-    <option name="LAST_COMMIT_MESSAGE" value="Get current user" />
+    <MESSAGE value="add logic for login" />
+    <option name="LAST_COMMIT_MESSAGE" value="add logic for login" />
   </component>
 </project>
