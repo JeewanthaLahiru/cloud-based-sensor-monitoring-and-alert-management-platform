@@ -1,0 +1,31 @@
+<h2 class="header mt-5" style="text-align: center;">Meet our team behind the Monitor application</h2>
+<p class="w-50" style="margin: auto;">"Teamwork is the ability to work together toward a common vision. The ability to direct individual accomplishments toward organizational objectives. It is the fuel that allows common people to attain uncommon results."</p>
+<hr class="w-75 my-5" style="margin: auto;">
+<div class="container w-75">
+    <div class="row">
+        <div class="col-md-4 col-sm-6 my-3" *ngFor='let user of users'>
+            <div class="card">
+                <div class="card-body">
+                    <img src="{{user.image}}" alt="" style="width: 100%; ">
+                    <h5 class="card-title text-center">{{user.name}}</h5>
+                    <h6 class="card-subtitle mb-2 text-muted text-center">{{user.studentNumber}}</h6>
+                    <p class="card-text text-center">{{user.part}}</p>
+                    <div class="socialLink">
+                        <a href="#" class="fa fa-facebook"></a>
+                        <a href="#" class="fa fa-linkedin"></a>
+                        <a href="#" class="fa fa-instagram"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<hr class="w-75 my-5" style="margin: auto;">
+<h3 class="header mt-5" style="text-align: center;">Used technologies</h3>
+<ul class="list-group w-50 m-auto">
+    <li class="list-group-item">Angular - used for front end</li>
+    <li class="list-group-item">Springboot - used for backend</li>
+    <li class="list-group-item">Mongodb - used for database</li>
+    <li class="list-group-item">Nifi - used for data ingestion</li>
+</ul>
+

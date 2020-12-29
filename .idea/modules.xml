@@ -3,7 +3,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/cloud-based-sensor-monitoring-and-alert-management-platform.iml" filepath="$PROJECT_DIR$/.idea/cloud-based-sensor-monitoring-and-alert-management-platform.iml" />
-      <module fileurl="file://$PROJECT_DIR$/monitorapp/monitorapp.iml" filepath="$PROJECT_DIR$/monitorapp/monitorapp.iml" />
     </modules>
   </component>
 </project>

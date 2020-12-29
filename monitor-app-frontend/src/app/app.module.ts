@@ -5,6 +5,7 @@ import { AuthService } from './auth.service';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { TokenInterceptorService } from './token-interceptor.service';
 import { WeatherService } from './weather.service';
+import { NotificationService } from './notification.service';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -17,6 +18,7 @@ import { AuthGuard } from './auth.guard';
 import { TemperatureComponent } from './temperature/temperature.component';
 import { HumidityComponent } from './humidity/humidity.component';
 import { PressureComponent } from './pressure/pressure.component';
+import { AboutComponent } from './about/about.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +30,8 @@ import { PressureComponent } from './pressure/pressure.component';
     NotFoundComponent,
     TemperatureComponent,
     HumidityComponent,
-    PressureComponent
+    PressureComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,
@@ -39,6 +42,7 @@ import { PressureComponent } from './pressure/pressure.component';
   providers: [
     AuthService,
     AuthGuard,
+    NotificationService,
     WeatherService,
     {
       provide:HTTP_INTERCEPTORS,
