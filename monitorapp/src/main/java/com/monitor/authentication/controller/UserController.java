@@ -12,6 +12,7 @@ import org.springframework.security.authentication.UsernamePasswordAuthenticatio
 import org.springframework.web.bind.annotation.*;
 
 @RestController
+@CrossOrigin(origins = "http://localhost:4200")
 public class UserController {
 
     @Autowired
@@ -37,6 +38,7 @@ public class UserController {
         return "frfd";
     }
 
+    @CrossOrigin(origins = "http://localhost:4200")
     @PostMapping("/register")
     public Object register(@RequestBody User user) throws Exception {
 

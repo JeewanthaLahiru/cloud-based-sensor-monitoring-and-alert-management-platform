@@ -4,21 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="46f66402-4104-4689-ae50-181e077b6d89" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/monitor-app-frontend/src/app/auth.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/monitor-app-frontend/src/app/auth.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/monitor-app-frontend/src/app/login/login.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/monitor-app-frontend/src/app/login/login.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/monitor-app-frontend/src/app/register/register.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/monitor-app-frontend/src/app/register/register.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/monitorapp/src/main/java/com/monitor/database/listen/TempDataRepositoryListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/monitorapp/src/main/java/com/monitor/database/listen/TempDataRepositoryListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/monitorapp/src/main/java/com/monitor/database/web/controller/NotificationReactiveController.java" beforeDir="false" afterPath="$PROJECT_DIR$/monitorapp/src/main/java/com/monitor/database/web/controller/NotificationReactiveController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/monitorapp/src/main/java/com/monitor/monitorapp/DbSeeder.java" beforeDir="false" afterPath="$PROJECT_DIR$/monitorapp/src/main/java/com/monitor/monitorapp/DbSeeder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/monitorapp/src/main/java/com/monitor/monitorapp/JwtResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/monitorapp/src/main/java/com/monitor/monitorapp/JwtResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/monitorapp/src/main/java/com/monitor/monitorapp/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/monitorapp/src/main/java/com/monitor/monitorapp/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/monitorapp/src/main/java/com/monitor/monitorapp/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/monitorapp/src/main/java/com/monitor/monitorapp/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/monitorapp/src/main/java/com/monitor/monitorapp/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/monitorapp/src/main/java/com/monitor/monitorapp/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/monitorapp/src/main/java/com/monitor/monitorapp/configuration/SC.java" beforeDir="false" afterPath="$PROJECT_DIR$/monitorapp/src/main/java/com/monitor/monitorapp/configuration/SC.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/monitorapp/src/main/java/com/monitor/monitorapp/utility/JWTUtility.java" beforeDir="false" afterPath="$PROJECT_DIR$/monitorapp/src/main/java/com/monitor/monitorapp/utility/JWTUtility.java" afterDir="false" />
-    </list>
+    <list default="true" id="46f66402-4104-4689-ae50-181e077b6d89" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -55,7 +41,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="dart.analysis.tool.window.visible" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/monitorapp/src/main/java/com/monitor/authentication/entity" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/monitorapp" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -88,17 +74,6 @@
     </key>
   </component>
   <component name="RunManager" selected="Spring Boot.MonitorappApplication (1)">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="E2E Tests (monitor-app-frontend)" type="JavaScriptTestRunnerProtractor">
       <config-file value="$PROJECT_DIR$/monitor-app-frontend/e2e/protractor.conf.js" />
       <node-interpreter value="project" />
@@ -179,6 +154,12 @@
     <MESSAGE value="user register and user delete complete" />
     <option name="LAST_COMMIT_MESSAGE" value="user register and user delete complete" />
   </component>
+  <component name="WindowStateProjectService">
+    <state x="549" y="172" key="FileChooserDialogImpl" timestamp="1609244241832">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="549" y="172" key="FileChooserDialogImpl/0.0.1536.834@0.0.1536.834" timestamp="1609244241832" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
@@ -201,31 +182,6 @@
           <url>file://$PROJECT_DIR$/monitorapp/src/main/java/com/monitor/authentication/util/JwtUtil.java</url>
           <line>52</line>
           <option name="timeStamp" value="9" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/monitorapp/src/main/java/com/monitor/database/web/controller/NotificationReactiveController.java</url>
-          <line>46</line>
-          <option name="timeStamp" value="10" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/monitorapp/src/main/java/com/monitor/database/web/controller/NotificationReactiveController.java</url>
-          <line>47</line>
-          <option name="timeStamp" value="11" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/monitorapp/src/main/java/com/monitor/database/web/controller/NotificationReactiveController.java</url>
-          <line>48</line>
-          <option name="timeStamp" value="12" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/monitorapp/src/main/java/com/monitor/database/web/controller/NotificationReactiveController.java</url>
-          <line>49</line>
-          <option name="timeStamp" value="13" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/monitorapp/src/main/java/com/monitor/database/web/controller/NotificationReactiveController.java</url>
-          <line>50</line>
-          <option name="timeStamp" value="14" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

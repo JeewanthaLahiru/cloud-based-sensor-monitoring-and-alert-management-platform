@@ -8,7 +8,7 @@ import { UserLoginModel } from './UserLoginModel';
 })
 export class AuthService {
 
-  private _registerUrl = "http://localhost:8080/User/add";
+  private _registerUrl = "http://localhost:8080/register";
   private _loginUrl = "http://localhost:8080/User/login";
   private _getCurrentUserUrl = "http://localhost:8080/User/now";
 
