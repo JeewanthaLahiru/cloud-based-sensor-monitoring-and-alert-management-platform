@@ -20,19 +20,19 @@ public class JWTUtility implements Serializable {
 
     public static final long JWT_TOKEN_VALIDITY = 5 * 60 * 60;
 
-    @Value("MonitorApp")
+    @Value("TempMonitorApp")
     private String secretKey;
 
-    //retrieve username from jwt token
-    public String getUsernameFromToken(String token) {
+    //retrieve Id from jwt token
+    public String getIdFromToken(String token) {
         return getClaimFromToken(token, Claims::getSubject);
     }
 
-    //retrieve expiration date from jwt token
+    /*//retrieve expiration date from jwt token
     public Date getExpirationDateFromToken(String token) {
         return getClaimFromToken(token, Claims::getExpiration);
     }
-
+*/
 
     public <T> T getClaimFromToken(String token, Function<Claims, T> claimsResolver) {
         final Claims claims = getAllClaimsFromToken(token);
@@ -46,11 +46,11 @@ public class JWTUtility implements Serializable {
     }
 
 
-    //check if the token has expired
+/*    //check if the token has expired
     private Boolean isTokenExpired(String token) {
         final Date expiration = getExpirationDateFromToken(token);
         return expiration.before(new Date());
-    }
+    }*/
 
 
     //generate token for user

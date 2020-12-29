@@ -10,7 +10,7 @@ export class AuthService {
 
   private _registerUrl = "http://localhost:8080/User/add";
   private _loginUrl = "http://localhost:8080/User/login";
-  private _getCurrentUserUrl = "http://localhost:3000/api/get-current-user";
+  private _getCurrentUserUrl = "http://localhost:8080/User/currentUser";
 
   constructor(private _http:HttpClient) { }
 

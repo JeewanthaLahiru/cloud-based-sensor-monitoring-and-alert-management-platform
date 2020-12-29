@@ -2,7 +2,6 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
-      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
@@ -11,11 +10,13 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="monitor-app" target="11" />
       <module name="monitorapp" target="11" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="monitor-app" options="-parameters" />
       <module name="monitorapp" options="-parameters" />
     </option>
   </component>

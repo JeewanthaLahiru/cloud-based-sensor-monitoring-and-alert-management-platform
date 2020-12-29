@@ -1,15 +1,12 @@
 package com.monitor.monitorapp;
 
-import org.springframework.boot.CommandLineRunner;
+
 import org.springframework.stereotype.Component;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
 
 @Component
 public class DbSeeder /*implements CommandLineRunner */{
-    private UserRepository userRepository;
+    private final UserRepository userRepository;
 
     public DbSeeder(UserRepository userRepository) {
         this.userRepository = userRepository;
