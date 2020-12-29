@@ -1,5 +1,6 @@
-package com.monitor.monitorapp;
+package com.monitor.Authentication.Repository;
 
+import com.monitor.Authentication.entity.User;
 import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.stereotype.Repository;
 

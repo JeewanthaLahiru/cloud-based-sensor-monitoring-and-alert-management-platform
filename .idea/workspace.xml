@@ -4,13 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="64948a89-8d6b-42c3-abdf-ff6f6e257391" name="Default Changelist" comment="">
+    <list default="true" id="64948a89-8d6b-42c3-abdf-ff6f6e257391" name="Default Changelist" comment="Authentication Done">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/monitorapp/src/main/java/com/monitor/database/web/controller/NotificationReactiveController.java" beforeDir="false" afterPath="$PROJECT_DIR$/monitorapp/src/main/java/com/monitor/database/web/controller/NotificationReactiveController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/monitorapp/src/main/java/com/monitor/monitorapp/DbSeeder.java" beforeDir="false" afterPath="$PROJECT_DIR$/monitorapp/src/main/java/com/monitor/monitorapp/DbSeeder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/monitorapp/src/main/java/com/monitor/monitorapp/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/monitorapp/src/main/java/com/monitor/monitorapp/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/monitorapp/src/main/java/com/monitor/monitorapp/configuration/SC.java" beforeDir="false" afterPath="$PROJECT_DIR$/monitorapp/src/main/java/com/monitor/monitorapp/configuration/SC.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/monitorapp/src/main/java/com/monitor/monitorapp/utility/JWTUtility.java" beforeDir="false" afterPath="$PROJECT_DIR$/monitorapp/src/main/java/com/monitor/monitorapp/utility/JWTUtility.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/monitorapp/src/main/java/com/monitor/monitorapp/DbSeeder.java" beforeDir="false" afterPath="$PROJECT_DIR$/monitorapp/src/main/java/com/monitor/Authentication/configuration/DbSeeder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/monitorapp/src/main/java/com/monitor/monitorapp/JwtResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/monitorapp/src/main/java/com/monitor/Authentication/web/response/JwtResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/monitorapp/src/main/java/com/monitor/monitorapp/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/monitorapp/src/main/java/com/monitor/Authentication/entity/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/monitorapp/src/main/java/com/monitor/monitorapp/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/monitorapp/src/main/java/com/monitor/Authentication/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/monitorapp/src/main/java/com/monitor/monitorapp/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/monitorapp/src/main/java/com/monitor/Authentication/Repository/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/monitorapp/src/main/java/com/monitor/monitorapp/configuration/SC.java" beforeDir="false" afterPath="$PROJECT_DIR$/monitorapp/src/main/java/com/monitor/Authentication/configuration/SC.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/monitorapp/src/main/java/com/monitor/monitorapp/utility/JWTUtility.java" beforeDir="false" afterPath="$PROJECT_DIR$/monitorapp/src/main/java/com/monitor/Authentication/utility/JWTUtility.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,6 +72,13 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\cloud-based-sensor-monitoring-and-alert-management-platform\monitorapp\src\main\java\com\monitor\monitorapp" />
     </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.monitor.Authentication.configuration" />
+      <recent name="com.monitor.Authentication.web.response" />
+      <recent name="com.monitor.Authentication.entity" />
+      <recent name="com.monitor.Authentication.Repository" />
+      <recent name="com.monitor.Authentication.controller" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="configurationTypes">
@@ -78,6 +88,17 @@
     </option>
   </component>
   <component name="RunManager" selected="Spring Boot.MonitorappApplication ">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="E2E Tests (monitor-app-frontend)" type="JavaScriptTestRunnerProtractor">
       <config-file value="$PROJECT_DIR$/monitor-app-frontend/e2e/protractor.conf.js" />
       <node-interpreter value="project" />
@@ -127,7 +148,8 @@
       <workItem from="1609233208982" duration="2883000" />
       <workItem from="1609236455636" duration="1451000" />
       <workItem from="1609246881475" duration="8070000" />
-      <workItem from="1609261537194" duration="2214000" />
+      <workItem from="1609261537194" duration="3843000" />
+      <workItem from="1609269513476" duration="3023000" />
     </task>
     <task id="LOCAL-00001" summary="user register">
       <created>1608752726614</created>
@@ -164,17 +186,37 @@
       <option name="project" value="LOCAL" />
       <updated>1609252897458</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Get current user details">
+      <created>1609263855516</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1609263855516</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="user register" />
     <MESSAGE value="user register and user delete complete" />
     <MESSAGE value="Get current user" />
     <MESSAGE value="add logic for login" />
-    <option name="LAST_COMMIT_MESSAGE" value="add logic for login" />
+    <MESSAGE value="Get current user details" />
+    <option name="LAST_COMMIT_MESSAGE" value="Get current user details" />
   </component>
 </project>

@@ -1,6 +1,7 @@
-package com.monitor.monitorapp;
+package com.monitor.Authentication.configuration;
 
 
+import com.monitor.Authentication.Repository.UserRepository;
 import org.springframework.stereotype.Component;
 
 

@@ -2,9 +2,9 @@ package com.monitor.database.web.controller;
 
 import com.monitor.database.model.Notification;
 import com.monitor.database.repository.NotificationReactiveRepository;
-import com.monitor.monitorapp.User;
-import com.monitor.monitorapp.UserRepository;
-import com.monitor.monitorapp.utility.JWTUtility;
+import com.monitor.Authentication.entity.User;
+import com.monitor.Authentication.Repository.UserRepository;
+import com.monitor.Authentication.utility.JWTUtility;
 import com.monitor.sensor_data.Sensors;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;

@@ -1,4 +1,4 @@
-package com.monitor.monitorapp.configuration;
+package com.monitor.Authentication.configuration;
 
 import lombok.AllArgsConstructor;
 import org.springframework.context.annotation.Configuration;

@@ -1,4 +1,4 @@
-package com.monitor.monitorapp;
+package com.monitor.Authentication.entity;
 
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;

@@ -1,4 +1,4 @@
-package com.monitor.monitorapp;
+package com.monitor.Authentication.web.response;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

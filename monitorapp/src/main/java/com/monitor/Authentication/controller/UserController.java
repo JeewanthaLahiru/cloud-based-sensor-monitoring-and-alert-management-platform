@@ -1,6 +1,9 @@
-package com.monitor.monitorapp;
+package com.monitor.Authentication.controller;
 
-import com.monitor.monitorapp.utility.JWTUtility;
+import com.monitor.Authentication.web.response.JwtResponse;
+import com.monitor.Authentication.entity.User;
+import com.monitor.Authentication.Repository.UserRepository;
+import com.monitor.Authentication.utility.JWTUtility;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 

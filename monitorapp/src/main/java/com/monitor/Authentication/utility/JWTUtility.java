@@ -1,4 +1,4 @@
-package com.monitor.monitorapp.utility;
+package com.monitor.Authentication.utility;
 
 
 import io.jsonwebtoken.Claims;
@@ -23,7 +23,7 @@ public class JWTUtility implements Serializable {
     @Value("TempMonitorApp")
     private String secretKey;
 
-    //retrieve Id from jwt token
+    //retrieve user details from jwt token
     public String getDetailsFromToken(String token) {
         return getClaimFromToken(token, Claims::getSubject);
     }
