@@ -1,6 +1,7 @@
 package com.monitor.monitorapp;
 
 import com.monitor.monitorapp.utility.JWTUtility;
+import com.nimbusds.oauth2.sdk.util.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -23,20 +24,34 @@ public class UserController {
     //add user
     @PostMapping("/add")
     public Object insert(@RequestBody User user) {
-        this.userRepository.insert(user);
-        final String token=jwtUtility.generateToken(user.getId());
-        return new JwtResponse(token);
+
+        if (userRepository.findByEmail(user.getEmail())!=null) {
+            return new String[]{"Email already registered"};
+        }
+            this.userRepository.insert(user);
+            final String token = jwtUtility.generateToken(user.getEmail(), user.getPassword());
+            return new JwtResponse(token);
     }
     //find user by email
     @PostMapping( "/login")
     public Object login(@RequestBody User user) {
-        final String token=jwtUtility.generateToken(user.getId());
+        final String token=jwtUtility.generateToken(user.getEmail(), user.getPassword());
         return new JwtResponse(token);
     }
 
     @GetMapping("/currentUser")
     public Object user(@RequestHeader("Authorization") String token){
-        return userRepository.findById(jwtUtility.getIdFromToken(token));
+        String token1 =jwtUtility.getEmailFromToken(token);
+        String password = token1.substring(token1.lastIndexOf(",") + 1);
+        String email = token1.substring(0, token1.indexOf(','));
+
+        if (userRepository.findByEmail(email)!=null){
+            if (userRepository.findByPassword(password)!=null){
+                return  userRepository.findByPassword(password);
+            }
+            return new String[]{"Wrong Password"};
+        }
+        return new String[]{"Wrong Email"};
     }
 
 }
