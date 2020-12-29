@@ -8,12 +8,22 @@ import { IWeather } from './models/iweather';
 })
 export class WeatherService {
 
-  _url="http://localhost:8080/sensors/0001";
+  _tempUrl="http://localhost:8080/sensors/0001";
+  _humidityUrl="http://localhost:8080/sensors/0002";
+  _pressureUrl="http://localhost:8080/sensors/0003";
 
   constructor(private _http:HttpClient) { }
 
   getWeather():Observable<IWeather[]>{
-    return this._http.get<IWeather[]>(this._url);
+    return this._http.get<IWeather[]>(this._tempUrl);
+  }
+
+  getHumidity():Observable<IWeather[]>{
+    return this._http.get<IWeather[]>(this._humidityUrl);
+  }
+
+  getPressure():Observable<IWeather[]>{
+    return this._http.get<IWeather[]>(this._pressureUrl);
   }
 
 }

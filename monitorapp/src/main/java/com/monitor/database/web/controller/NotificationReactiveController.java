@@ -1,6 +1,7 @@
 package com.monitor.database.web.controller;
 
 import com.monitor.database.model.Notification;
+import com.monitor.database.model.TempData;
 import com.monitor.database.repository.NotificationReactiveRepository;
 import com.monitor.monitorapp.User;
 import com.monitor.monitorapp.UserRepository;
@@ -42,26 +43,7 @@ public class NotificationReactiveController {
         return this.notificationReactiveRepository.save(notification);
     }
     @GetMapping(produces = MediaType.TEXT_EVENT_STREAM_VALUE)
-    public Flux<Notification> getByTailing(@RequestHeader("Authorization") String jwt){
-        String token = jwt.substring(7);
-        String username = jwtUtility.getDetailsFromToken(token);
-        String email = username.substring(0, username.indexOf(','));
-        User user=this.userRepository.findByEmail(email);
-        String notificationMethod = user.getNotification();
-        if (notificationMethod.equals("Email")) {
-            System.out.println("\n==========================================================");
-            System.out.println("\n     An email has been sent to " + user.getEmail());
-            System.out.println("\n==========================================================\n");
-        } else if (notificationMethod.equals("Text message")) {
-            System.out.println("\n==========================================================");
-            System.out.println("\n     A text message has been sent to " + user.getPhone());
-            System.out.println("\n==========================================================\n");
-        } else if (notificationMethod.equals("Audio call")) {
-            System.out.println("\n==========================================================");
-            System.out.println("\n     An audio call has been sent to " + user.getPhone());
-            System.out.println("\n==========================================================\n");
-        }
-
+    public Flux<Notification> getByTailing(){
         Flux<Notification> stream = notificationReactiveRepository.findByTime("24");
         Disposable subscription = stream.doOnNext(System.out::println).subscribe();
         return stream;

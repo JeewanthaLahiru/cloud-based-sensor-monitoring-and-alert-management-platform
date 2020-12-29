@@ -1,3 +1,4 @@
+/*
 package com.monitor.sensor_data;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -51,3 +52,4 @@ public class Sensor_Seeder implements CommandLineRunner {
         this.sensorRepository.saveAll(sensors);
     }
 }
+*/

@@ -30,7 +30,7 @@ export class AuthService {
     return localStorage.getItem('token');
   }
   getCurrentUser(){
-    return this._http.post<any>(this._getCurrentUserUrl,localStorage.getItem('token'));
+    return this._http.get<any>(this._getCurrentUserUrl);
   }
 
 }
