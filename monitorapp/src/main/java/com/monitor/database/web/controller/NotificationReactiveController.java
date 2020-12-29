@@ -37,13 +37,15 @@ public class NotificationReactiveController {
     }*/
 
     @GetMapping(produces = MediaType.TEXT_EVENT_STREAM_VALUE)
-    public Flux<Notification> getByTailing(@RequestHeader("Authorization") String token) {
-
-
-        String username = jwtUtility.getEmailFromToken(token);
+    public Flux<Notification> getByTailing(@RequestHeader("Authorization") String jwt){
+        String token = jwt.substring(7);
+        String username = jwtUtility.getDetailsFromToken(token);
         String email = username.substring(0, username.indexOf(','));
         User user=this.userRepository.findByEmail(email);
         String notificationMethod = user.getNotification();
+        String name =user.getName();
+        String e_mail =user.getEmail();
+        String phone = user.getPhone();
         Flux<Notification> stream = notificationReactiveRepository.findByTime("24");
         Disposable subscription = stream.doOnNext(System.out::println).subscribe();
         return stream;

@@ -1,11 +1,9 @@
 package com.monitor.monitorapp;
 
 import com.monitor.monitorapp.utility.JWTUtility;
-import com.nimbusds.oauth2.sdk.util.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.List;
 
 @CrossOrigin(origins ="http://localhost:4200")
 @RestController
@@ -40,8 +38,9 @@ public class UserController {
     }
 
     @GetMapping("/currentUser")
-    public Object user(@RequestHeader("Authorization") String token){
-        String token1 =jwtUtility.getEmailFromToken(token);
+    public Object user(@RequestHeader("Authorization") String jwt){
+        String token = jwt.substring(7);
+        String token1 =jwtUtility.getDetailsFromToken(token);
         String password = token1.substring(token1.lastIndexOf(",") + 1);
         String email = token1.substring(0, token1.indexOf(','));
 

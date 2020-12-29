@@ -24,15 +24,9 @@ public class JWTUtility implements Serializable {
     private String secretKey;
 
     //retrieve Id from jwt token
-    public String getEmailFromToken(String token) {
+    public String getDetailsFromToken(String token) {
         return getClaimFromToken(token, Claims::getSubject);
     }
-
-    /*//retrieve expiration date from jwt token
-    public Date getExpirationDateFromToken(String token) {
-        return getClaimFromToken(token, Claims::getExpiration);
-    }
-*/
 
     public <T> T getClaimFromToken(String token, Function<Claims, T> claimsResolver) {
         final Claims claims = getAllClaimsFromToken(token);
@@ -45,12 +39,6 @@ public class JWTUtility implements Serializable {
         return Jwts.parser().setSigningKey(secretKey).parseClaimsJws(token).getBody();
     }
 
-
-/*    //check if the token has expired
-    private Boolean isTokenExpired(String token) {
-        final Date expiration = getExpirationDateFromToken(token);
-        return expiration.before(new Date());
-    }*/
 
 
     //generate token for user
@@ -69,10 +57,4 @@ public class JWTUtility implements Serializable {
                 .signWith(SignatureAlgorithm.HS512, secretKey).compact();
     }
 
-
-    //validate token
-    /*public Boolean validateToken(String token, UserDetails userDetails) {
-        final String username = getUsernameFromToken(token);
-        return (username.equals(userDetails.getUsername()) && !isTokenExpired(token));
-    }*/
 }

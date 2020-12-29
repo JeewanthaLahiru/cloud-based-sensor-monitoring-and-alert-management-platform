@@ -7,6 +7,10 @@
     <list default="true" id="64948a89-8d6b-42c3-abdf-ff6f6e257391" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/monitorapp/src/main/java/com/monitor/database/web/controller/NotificationReactiveController.java" beforeDir="false" afterPath="$PROJECT_DIR$/monitorapp/src/main/java/com/monitor/database/web/controller/NotificationReactiveController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/monitorapp/src/main/java/com/monitor/monitorapp/DbSeeder.java" beforeDir="false" afterPath="$PROJECT_DIR$/monitorapp/src/main/java/com/monitor/monitorapp/DbSeeder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/monitorapp/src/main/java/com/monitor/monitorapp/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/monitorapp/src/main/java/com/monitor/monitorapp/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/monitorapp/src/main/java/com/monitor/monitorapp/configuration/SC.java" beforeDir="false" afterPath="$PROJECT_DIR$/monitorapp/src/main/java/com/monitor/monitorapp/configuration/SC.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/monitorapp/src/main/java/com/monitor/monitorapp/utility/JWTUtility.java" beforeDir="false" afterPath="$PROJECT_DIR$/monitorapp/src/main/java/com/monitor/monitorapp/utility/JWTUtility.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,6 +25,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="dev" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1m4RbXZtu4UQCKXkfHQch0l7ygi" />
@@ -118,6 +127,7 @@
       <workItem from="1609233208982" duration="2883000" />
       <workItem from="1609236455636" duration="1451000" />
       <workItem from="1609246881475" duration="8070000" />
+      <workItem from="1609261537194" duration="2214000" />
     </task>
     <task id="LOCAL-00001" summary="user register">
       <created>1608752726614</created>
