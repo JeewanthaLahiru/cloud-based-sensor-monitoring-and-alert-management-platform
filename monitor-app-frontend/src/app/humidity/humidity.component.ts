@@ -23,7 +23,7 @@ export class HumidityComponent implements OnInit {
         weatherDate.push(item.date.slice(-8,-3))
         weatherValue.push(Number(item.data_value.slice(0,2)))
       })
-      console.log(weatherDate)
+      //console.log(weatherDate)
       var myChart = new Chart('myChart', {
         type: 'line',
         data: {

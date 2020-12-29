@@ -4,6 +4,8 @@ import { IWeather } from '../models/iweather';
 import { WeatherService } from '../weather.service';
 import { Router } from "@angular/router";
 import { AuthService } from '../auth.service';
+import { UserRegisterModel } from '../UserRegisterModel';
+import { CurrentUser } from '../CurrentUser';
 
 @Component({
   selector: 'app-profile',
@@ -19,11 +21,18 @@ export class ProfileComponent implements OnInit {
   testingValue = 35
   testingKey:String[]
 
+  name:string
+  email:string
+  phone:string
+
   _token = localStorage.getItem('token')
 
   constructor(private _weather: WeatherService,private _route:Router,private _auth:AuthService) { }
 
   ngOnInit(): void {
+
+    
+
     this.testingKey = ['hello','world']
     console.log(this.testingKey)
     
@@ -33,6 +42,9 @@ export class ProfileComponent implements OnInit {
 
     this._auth.getCurrentUser().subscribe(data=>{
       console.log(data)
+      this.name = data.name
+      this.email = data.email
+      this.phone = data.phone
     })
 
   }
