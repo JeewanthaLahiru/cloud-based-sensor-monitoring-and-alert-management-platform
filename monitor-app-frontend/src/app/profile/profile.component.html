@@ -38,13 +38,9 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <td>test1</td>
-                            <td>test2</td>
-                            <td>{{notification}}</td>
-                        </tr>
+                        
                         <tr *ngFor='let message of messages'>
-                            <td>{{message|slice : -5 : -2 }}</td>
+                            <td>{{message|slice : 43 : 47 }}</td>
                             <td>{{message|slice : -5 : -2 }}</td>
                             <td>{{notification}}</td>
                         </tr>
