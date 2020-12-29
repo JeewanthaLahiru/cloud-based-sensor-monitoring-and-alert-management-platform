@@ -20,9 +20,9 @@ public class DataController {
         return sensors;
     }
 
-    @GetMapping("address/{find}")
+    @GetMapping("/{find}")
     public List<Sensors> getById(@PathVariable("find") String id){
        List<Sensors> sensor=this.sensorRepository.find(id);
-        return sensor;
+       return sensor;
     }
 }

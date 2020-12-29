@@ -8,7 +8,7 @@ import { IWeather } from './models/iweather';
 })
 export class WeatherService {
 
-  _url="http://localhost:8080/sensors/all";
+  _url="http://localhost:8080/sensors/0001";
 
   constructor(private _http:HttpClient) { }
 
