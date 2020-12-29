@@ -19,7 +19,6 @@ import { TemperatureComponent } from './temperature/temperature.component';
 import { HumidityComponent } from './humidity/humidity.component';
 import { PressureComponent } from './pressure/pressure.component';
 import { AboutComponent } from './about/about.component';
-import { NotificationComponent } from './notification/notification.component';
 
 @NgModule({
   declarations: [
@@ -32,8 +31,7 @@ import { NotificationComponent } from './notification/notification.component';
     TemperatureComponent,
     HumidityComponent,
     PressureComponent,
-    AboutComponent,
-    NotificationComponent
+    AboutComponent
   ],
   imports: [
     BrowserModule,
