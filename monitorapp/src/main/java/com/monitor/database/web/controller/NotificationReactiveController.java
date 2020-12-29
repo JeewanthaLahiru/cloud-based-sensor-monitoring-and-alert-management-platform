@@ -1,5 +1,8 @@
 package com.monitor.database.web.controller;
 
+import com.monitor.authentication.entity.User;
+import com.monitor.authentication.repository.UserRepository;
+import com.monitor.authentication.util.JwtUtil;
 import com.monitor.database.model.Notification;
 import com.monitor.database.model.TempData;
 import com.monitor.database.repository.NotificationReactiveRepository;
@@ -18,6 +21,12 @@ public class NotificationReactiveController {
     private NotificationReactiveRepository notificationReactiveRepository;
 
     @Autowired
+    private UserRepository userRepository;
+
+    @Autowired
+    private JwtUtil jwtUtil;
+
+    @Autowired
     public NotificationReactiveController(/*NotificationService notificationService, */NotificationReactiveRepository notificationReactiveRepository) {
         //this.notificationService = notificationService;
         this.notificationReactiveRepository = notificationReactiveRepository;
@@ -33,9 +42,15 @@ public class NotificationReactiveController {
     }
 
     @GetMapping(produces = MediaType.TEXT_EVENT_STREAM_VALUE)
-    public Flux<Notification> getByTailing() {
+    public Flux<Notification> getByTailing(@RequestHeader("Authorization") String authorization) {
+
+        String token = authorization.substring(7);
+        System.out.println(token);
+        String username = jwtUtil.extractUsername(token);
+        User user = this.userRepository.findByEmail(username);
+        System.out.println(user.getNotificationMethod());
         Flux<Notification> stream = notificationReactiveRepository.findByTime("24");
-        //Disposable subscription = stream.doOnNext(System.out::println).subscribe();
+        Disposable subscription = stream.doOnNext(System.out::println).subscribe();
         return stream;
     }
 

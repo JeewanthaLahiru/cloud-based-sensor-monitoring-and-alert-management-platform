@@ -1,3 +1,4 @@
+/*
 package com.monitor.monitorapp;
 
 import lombok.AllArgsConstructor;
@@ -10,4 +11,5 @@ import lombok.NoArgsConstructor;
 public class JwtResponse {
 
     private String jwtToken;
-}
+
+}*/
