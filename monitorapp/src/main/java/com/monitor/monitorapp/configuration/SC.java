@@ -1,3 +1,4 @@
+/*
 package com.monitor.monitorapp.configuration;
 
 import lombok.AllArgsConstructor;
@@ -40,4 +41,4 @@ public class SC extends WebSecurityConfigurerAdapter {
         }
     }
 
-}
+}*/

@@ -1,3 +1,4 @@
+/*
 package com.monitor.monitorapp;
 
 import org.springframework.boot.CommandLineRunner;
@@ -8,12 +9,15 @@ import java.util.Arrays;
 import java.util.List;
 
 @Component
-public class DbSeeder /*implements CommandLineRunner */{
+public class DbSeeder */
+/*implements CommandLineRunner *//*
+{
     private UserRepository userRepository;
 
     public DbSeeder(UserRepository userRepository) {
         this.userRepository = userRepository;
     }
+*/
 /*
     @Override
     public void run(String... strings) throws Exception {
@@ -38,5 +42,7 @@ public class DbSeeder /*implements CommandLineRunner */{
 
         List<User> users = Arrays.asList(Chanaka, Jeewantha);
         this.userRepository.saveAll(users);
-    }*/
+    }*//*
+
 }
+*/

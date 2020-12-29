@@ -1,3 +1,4 @@
+/*
 package com.monitor.monitorapp;
 
 
@@ -49,27 +50,23 @@ public class UserController {
 //find user by email
     @PostMapping( "/login")
     public Object login(@RequestBody User user) {
-            User user1=this.userRepository.findByEmail(user.getEmail());
-            User user2=this.userRepository.findByPassword(user.getPassword());
-            if (user1 == null && user2 == null) {
-                return new String[]{"Wrong Email and Password"};
-             }
-            if (user1 == null) {
-                return new String[]{"Wrong Email"};
-            }
-            if (user2 == null) {
-                return new String[]{"Wrong Password"};
-            }
-            final String token=jwtUtility.generateToken(user2.getId());
-            return new JwtResponse(token);
+        String email = user.getEmail();
+        final String token=jwtUtility.generateToken(email);
+        return new JwtResponse(token);
     }
-    @GetMapping("/now")
+
+    @PostMapping("/now")
     public static Claims  getCurrentUser(String jwt){
             //This line will throw an exception if it is not a signed JWS (as expected)
-            Claims claims = Jwts.parser()
+        System.out.println(jwt);
+            */
+/*Claims claims = Jwts.parser()
                     .setSigningKey(DatatypeConverter.parseBase64Binary(String.valueOf(SECRET_KEY)))
                     .parseClaimsJws(jwt).getBody();
-            return claims;
+            return claims;*//*
+
+        return null;
     }
 
 }
+*/

@@ -19,5 +19,6 @@ public class TempDataRepositoryListener extends AbstractMongoEventListener<Notif
     public void onBeforeSave(BeforeSaveEvent<Notification> event) {
         super.onBeforeSave(event);
         System.out.println("Hi");
+        //implement user's notification notifying detail getting logic to display notification string
     }
 }
