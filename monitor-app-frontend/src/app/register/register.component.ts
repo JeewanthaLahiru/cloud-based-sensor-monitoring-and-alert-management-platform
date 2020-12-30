@@ -20,12 +20,17 @@ export class RegisterComponent implements OnInit {
   }
 
   registerUser(){
-    console.log(this.user1);
+    
     this.auth.registerUser(this.user1).subscribe(
       res=>{
         console.log(res);
         localStorage.setItem('token',res.jwtToken);
-        this._router.navigate(['/profile']);
+        if(res == "Email already registered"){
+          alert("Email is already registerd")
+        }else{
+          this._router.navigate(['/profile']);
+        }
+        
       },
       err=>console.log(err)
     )
