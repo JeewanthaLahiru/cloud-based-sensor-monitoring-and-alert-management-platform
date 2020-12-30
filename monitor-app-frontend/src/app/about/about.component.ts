@@ -37,7 +37,7 @@ export class AboutComponent implements OnInit {
     },
     {
       name:'Ovindu Archana',
-      studentNumber:'SE/2017/0XX',
+      studentNumber:'SE/2017/030',
       part:'Database',
       image:'../../assets/images/users/about004.png',
       fbLink:'https://www.facebook.com/profile.php?id=100008683652038',
@@ -55,7 +55,7 @@ export class AboutComponent implements OnInit {
     },
     {
       name:'Dilusha sandaruwani',
-      studentNumber:'SE/2017/0XX',
+      studentNumber:'SE/2017/040',
       part:'c4 diagram',
       image:'../../assets/images/users/about006.png',
       fbLink:'https://www.facebook.com/dilusha.sandaruwani.1',
