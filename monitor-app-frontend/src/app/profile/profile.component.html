@@ -25,9 +25,7 @@
             <div class="container-fluid my-5">
                 <router-outlet></router-outlet>
             </div>
-            <ul *ngFor='let message of messages'>
-                <li>{{message}}</li>
-            </ul>
+            
             <div class="container">
                 <h3>Notifications</h3>
                 <table class="table">
@@ -40,14 +38,10 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <td>test1</td>
-                            <td>test2</td>
-                            <td>{{notification}}</td>
-                        </tr>
+                        
                         <tr *ngFor='let message of messages'>
-                            <td>{{message.sensor}}</td>
-                            <td>{{message.temp}}</td>
+                            <td>{{message|slice : 43 : 47 }}</td>
+                            <td>{{message|slice : -5 : -2 }}</td>
                             <td>{{notification}}</td>
                         </tr>
                     </tbody>
