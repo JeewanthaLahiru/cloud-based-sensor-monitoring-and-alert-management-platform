@@ -40,6 +40,7 @@
                             <th>Sensor</th>
                             <th>Value</th>
                             <th>Notification method</th>
+                            <th>Time</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -48,6 +49,7 @@
                             <td>{{message|slice : 43 : 47 }}</td>
                             <td>{{message|slice : -5 : -2 }}</td>
                             <td>{{notification}}</td>
+                            <td>{{message |slice: -34: -24}} at {{message |slice: -23: -15}}</td>
                         </tr>
                     </tbody>
                 </table>
