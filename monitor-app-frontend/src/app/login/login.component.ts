@@ -15,6 +15,12 @@ export class LoginComponent implements OnInit {
   constructor(private auth:AuthService, private _router:Router) { }
 
   ngOnInit(): void {
+    this.auth.getCurrentUser().subscribe(data=>{
+      console.log(data)
+      if(data=="Wrong Email" || data == "Wrong Password"){
+        alert(data)
+      }
+    })
   }
 
   loginUser(){

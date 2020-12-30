@@ -44,8 +44,7 @@ export class ProfileComponent implements OnInit {
       console.log(message)
     })
 
-    this.testingKey = ['hello','world']
-    console.log(this.testingKey)
+    
     
     this._weather.getWeather().subscribe(data => {
       this.weather = data      

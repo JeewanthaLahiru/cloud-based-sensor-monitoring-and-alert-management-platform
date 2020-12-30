@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ed7657b4-f465-4813-a859-c9e50d45eb48" name="Default Changelist" comment="">
+    <list default="true" id="9cffdc71-1da7-475a-aa9f-ccbeb4dd34c7" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -87,5 +87,11 @@
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="549" y="172" key="FileChooserDialogImpl" timestamp="1609315191056">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="549" y="172" key="FileChooserDialogImpl/0.0.1536.834@0.0.1536.834" timestamp="1609315191056" />
   </component>
 </project>
