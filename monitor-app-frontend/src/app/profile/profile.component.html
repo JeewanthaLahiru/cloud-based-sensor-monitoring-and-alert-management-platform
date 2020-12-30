@@ -1,0 +1,66 @@
+<div class="container-fluid">
+    <div class="row content">
+        <div class="col-sm-2 sidenav bg-light pt-5">
+            <h4>User Details</h4>
+            <table>
+                <tr>
+                    <td>Name: {{name}}</td>
+                </tr>
+                <tr>
+                    <td>Email: {{email}}</td>
+                </tr>
+                <tr>
+                    <td>Phone: {{phone}}</td>
+                </tr>
+            </table>
+            
+            <ul class="nav nav-pills nav-stacked">
+                <li class="w-100 mt-4"><button class="btn btn-dark w-100" routerLink='temperature' routerLinkActive='active'>Temperature</button></li>
+                <li class="w-100 mt-2"><button class="btn btn-dark w-100" routerLink='humidity' routerLinkActive='active'>Humidity</button></li>
+                <li class="w-100 mt-2"><button class="btn btn-dark w-100" routerLink='pressure' routerLinkActive='active'>Pressure</button></li>
+            </ul>
+            <div class="row">
+                <button class="btn btn-success w-50 m-auto mt-5">Settings</button>
+            </div>
+            <div class="row">
+                <button (click)="logOut()" class="btn btn-danger w-50 m-auto mt-2">Log out</button>
+            </div>
+        </div>
+        <div class="col-sm-9">
+            <div class="container-fluid my-5">
+                <router-outlet></router-outlet>
+            </div>
+            
+            <div class="container">
+                <h3>Notifications</h3>
+                <table class="table">
+                    
+                    <thead>
+                        <tr>
+                            <th>Sensor</th>
+                            <th>Value</th>
+                            <th>Notification method</th>
+                            <th>Time</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        
+                        <tr *ngFor='let message of messages'>
+                            <td>{{message|slice : 43 : 47 }}</td>
+                            <td>{{message|slice : -5 : -2 }}</td>
+                            <td>{{notification}}</td>
+                            <td>{{message |slice: -34: -24}} at {{message |slice: -23: -15}}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        
+    </div>
+</div>
+
+
+
+
+
+
