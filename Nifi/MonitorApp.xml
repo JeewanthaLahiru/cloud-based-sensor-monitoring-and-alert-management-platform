@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<template encoding-version="1.3">
+    <description>Assignment</description>
+    <groupId>8b69fb8d-0176-1000-76f3-93da5040251e</groupId>
+    <name>MonitorApp</name>
+    <snippet>
+        <processors>
+            <id>a7637bb5-3c4b-3029-0000-000000000000</id>
+            <parentGroupId>338bd814-0a65-330d-0000-000000000000</parentGroupId>
+            <position>
+                <x>0.0</x>
+                <y>0.0</y>
+            </position>
+            <bundle>
+                <artifact>nifi-standard-nar</artifact>
+                <group>org.apache.nifi</group>
+                <version>1.12.1</version>
+            </bundle>
+            <config>
+                <bulletinLevel>WARN</bulletinLevel>
+                <comments></comments>
+                <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
+                <descriptors>
+                    <entry>
+                        <key>log-level</key>
+                        <value>
+                            <name>log-level</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>log-prefix</key>
+                        <value>
+                            <name>log-prefix</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>log-message</key>
+                        <value>
+                            <name>log-message</name>
+                        </value>
+                    </entry>
+                </descriptors>
+                <executionNode>ALL</executionNode>
+                <lossTolerant>false</lossTolerant>
+                <penaltyDuration>30 sec</penaltyDuration>
+                <properties>
+                    <entry>
+                        <key>log-level</key>
+                        <value>info</value>
+                    </entry>
+                    <entry>
+                        <key>log-prefix</key>
+                    </entry>
+                    <entry>
+                        <key>log-message</key>
+                    </entry>
+                </properties>
+                <runDurationMillis>0</runDurationMillis>
+                <schedulingPeriod>0 sec</schedulingPeriod>
+                <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
+                <yieldDuration>1 sec</yieldDuration>
+            </config>
+            <executionNodeRestricted>false</executionNodeRestricted>
+            <name>LogMessage</name>
+            <relationships>
+                <autoTerminate>false</autoTerminate>
+                <name>success</name>
+            </relationships>
+            <state>STOPPED</state>
+            <style/>
+            <type>org.apache.nifi.processors.standard.LogMessage</type>
+        </processors>
+    </snippet>
+    <timestamp>12/31/2020 18:44:53 IST</timestamp>
+</template>
